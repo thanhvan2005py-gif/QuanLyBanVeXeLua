@@ -1,0 +1,124 @@
+﻿@using QLXeBusPhuongTrang_65134257.Models.ViewModels
+@model VeHienThiViewModel
+@{
+    ViewBag.Title = "Edit";
+
+}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-3">
+
+                @* HEADER CỦA CARD *@
+                <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center" style="border-bottom: 2px solid #ef5222;">
+                    <h4 class="mb-0 fw-bold" style="color: #ef5222;">
+                        <i class="fas fa-edit me-2"></i> CẬP NHẬT TRẠNG THÁI VÉ
+                    </h4>
+
+                    <span class="badge px-3 py-2" style="background-color: #ef5222; color: white; font-size: 0.9rem;">
+                        Mã đại diện: #@Model.MaVeDaiDien
+                    </span>
+                </div>
+
+                <div class="card-body p-4">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.MaVeDaiDien)
+
+                        @* 1. THÔNG TIN KHÁCH HÀNG *@
+                        <div class="mb-4">
+                            <h6 class="text-secondary fw-bold border-bottom pb-2"><i class="fas fa-user me-2"></i>Thông Tin Khách Hàng</h6>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small">Họ tên</label>
+                                    <input type="text" class="form-control fw-bold" value="@Model.TenKH" readonly />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small">Điện thoại</label>
+                                    <input type="text" class="form-control fw-bold" value="@Model.DienThoai" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        @* 2. THÔNG TIN CHUYẾN ĐI *@
+                        <div class="mb-4">
+                            <h6 class="text-secondary fw-bold border-bottom pb-2"><i class="fas fa-bus me-2"></i>Chi Tiết Chuyến Xe</h6>
+                            <div class="mb-3">
+                                <label class="form-label text-muted small">Tuyến xe</label>
+                                <input type="text" class="form-control" value="@Model.TenTuyen" readonly />
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small">Thời gian khởi hành</label>
+                                    <input type="text" class="form-control" value="@Model.GioDi.ToString(@"hh\:mm") - @Model.NgayDi.ToString("dd/MM/yyyy")" readonly />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small">Thời gian đặt vé</label>
+                                    <input type="text" class="form-control" value="@Model.ThoiGianDat.ToString("dd/MM/yyyy HH:mm")" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        @* 3. THÔNG TIN GHẾ & GIÁ (ĐÃ GỘP) *@
+                        <div class="mb-4 bg-light p-3 rounded border">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-dark">Danh sách ghế đã chọn:</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        @foreach (var ghe in Model.DanhSachGhe.Split(','))
+                                        {
+                                            <span class="badge bg-info text-dark p-2" style="font-size: 1rem;">@ghe.Trim()</span>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <label class="form-label fw-bold text-dark">Tổng tiền:</label>
+                                    <h3 class="text-danger fw-bold m-0">@Model.TongTien.ToString("N0") VNĐ</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        @* 4. CẬP NHẬT TRẠNG THÁI (Phần quan trọng nhất) *@
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-primary fs-5">Cập Nhật Trạng Thái:</label>
+                            @Html.DropDownList("TrangThai", (SelectList)ViewBag.TrangThaiList, new { @class = "form-select form-select-lg border-primary fw-bold text-dark" })
+                        </div>
+
+                        <hr />
+
+                        @* BUTTONS *@
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
+                                <i class="fas fa-arrow-left me-2"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn futa-btn-orange px-4 fw-bold shadow">
+                                <i class="fas fa-save me-2"></i> LƯU THAY ĐỔI
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .futa-btn-orange {
+        background-color: #ef5222; /* Màu cam đặc trưng */
+        border-color: #ef5222;
+        color: white !important;
+        transition: all 0.3s ease;
+    }
+
+        .futa-btn-orange:hover {
+            background-color: #d03e12; /* Cam đậm hơn khi rê chuột */
+            border-color: #d03e12;
+            color: white !important;
+            transform: translateY(-1px); /* Hiệu ứng nổi lên nhẹ */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+        }
+
+        .futa-btn-orange:active {
+            transform: translateY(0);
+        }
+</style>

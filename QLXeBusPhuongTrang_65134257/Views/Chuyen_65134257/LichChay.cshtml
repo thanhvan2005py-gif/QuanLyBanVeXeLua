@@ -1,0 +1,112 @@
+﻿@model List<QLXeBusPhuongTrang_65134257.Models.LichChay>
+@using System.Linq
+@{
+    ViewBag.Title = "LichChay";
+
+}
+
+<h2 class="text-primary">
+    <i class="fas fa-calendar-alt"></i> Lịch Trình Tuyến: @ViewBag.Tuyen.BenXe.TenBen - @ViewBag.Tuyen.BenXe1.TenBen
+</h2>
+<p class="text-muted">Quãng đường: @ViewBag.Tuyen.QuangDuongKm Km</p>
+<hr />
+@if (HttpContext.Current.Session["TaiKhoan"] != null)
+{
+    <div class="d-flex justify-content-between mb-4">
+
+        <a href="@Url.Action("Create", "Chuyen_65134257")" class="btn btn-success px-4">
+            <i class="fas fa-plus-circle"></i> Thêm Chuyến
+        </a>
+    </div>
+}
+
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">
+        Không tìm thấy lịch chạy nào hoạt động cho tuyến này.
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach (var lichChay in Model)
+        {
+            <div class="col-12 mb-4">
+                <div class="card shadow">
+                    <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            Khởi hành: @lichChay.GioKhoiHanh.ToString(@"hh\:mm")
+                            <i class="fas fa-long-arrow-alt-right mx-2"></i>
+                            Đến: @lichChay.GioDen.ToString(@"hh\:mm")
+                        </h5>
+                        <small>Mã LC: @lichChay.MaLichChay</small>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <strong><i class="fas fa-car"></i> Xe:</strong> @lichChay.Xe.BienSo (@lichChay.Xe.LoaiXe, @lichChay.Xe.SoCho chỗ)
+                            </div>
+                            <div class="col-md-4">
+                                <strong><i class="fas fa-user-tie"></i> Tài Xế:</strong> @lichChay.TaiXe.HoTen
+                            </div>
+                            <div class="col-md-4">
+                                <strong><i class="fas fa-info-circle"></i> Trạng Thái:</strong> <span class="badge bg-success">@lichChay.TrangThai</span>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-3 border-bottom pb-1">Các Chuyến Khởi Hành </h6>
+
+                        @if (lichChay.Chuyens != null && lichChay.Chuyens.Any())
+                        {
+                            <table class="table table-sm table-striped table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th style="width: 20%;">Ngày Khởi Hành</th>
+                                        <th style="width: 20%;">Ghế Tổng</th>
+                                        <th style="width: 20%;">Ghế Trống</th>
+                                        <th style="width: 20%;">Trạng Thái</th>
+                                        <th style="width: 20%;">Hành Động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var chuyen in lichChay.Chuyens)
+                                    {
+                                        var trangThaiGhe = chuyen.SoGheTrong > 0 ? "Còn vé" : "Hết vé";
+                                        var cssClass = chuyen.SoGheTrong > 0 ? "text-success fw-bold" : "text-danger fw-bold";
+
+                                        <tr>
+                                            <td>@chuyen.Ngay.ToString("dd/MM/yyyy")</td>
+                                            <td>@lichChay.Xe.SoCho</td>
+                                            <td class="@cssClass">@chuyen.SoGheTrong</td>
+                                            <td><span class="badge bg-@(@chuyen.SoGheTrong > 0 ? "success" : "danger")">@trangThaiGhe</span></td>
+                                            <td>
+                                                @if (chuyen.SoGheTrong > 0)
+                                                {
+                                                    // Liên kết chuyển sang trang ĐẶT VÉ
+                                                    <a href="@Url.Action("ChonGhe", "Chuyen_65134257", new { MaChuyen = chuyen.MaChuyen })" class="btn btn-sm btn-warning">
+                                                        <i class="fas fa-shopping-cart"></i> Đặt Vé
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <button class="btn btn-sm btn-secondary" disabled>Hết Vé</button>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <p class="text-secondary fst-italic">Không có chuyến đi nào được lên lịch trong vài ngày tới.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+

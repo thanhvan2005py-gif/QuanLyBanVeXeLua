@@ -1,0 +1,157 @@
+﻿
+@using QLXeBusPhuongTrang_65134257.Models.ViewModels
+@model IEnumerable<VeHienThiViewModel>
+@{
+    ViewBag.Title = "Index";
+   
+    ViewBag.ActivePage = "Ve";
+
+    var grid = new WebGrid(
+        source: Model,
+        canPage: true,
+        rowsPerPage: 10,
+        canSort: true,
+        ajaxUpdateContainerId: "gridContent"
+    );
+}
+<style>
+    .grid-footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+        .grid-footer a {
+            color: #333;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 6px 12px;
+            margin: 0 2px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+            .grid-footer a:hover, .grid-footer .active {
+                background-color: #007bff; /* Màu chủ đạo */
+                color: #fff;
+                border-color: #007bff;
+            }
+</style>
+<div class="container-fluid">
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+            <i class="fas fa-check-circle me-2"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+<div class="d-flex justify-content-between align-items-center my-4">
+    <h2 class="text-primary fw-bold"><i class="fas fa-ticket-alt"></i> Danh Sách Vé Đã Đặt</h2>
+    @if (HttpContext.Current.Session["KhachHang"] != null) 
+    {
+    <a href="@Url.Action("Index", "Tuyen_65134257")" class="btn btn-success">
+        <i class="fas fa-plus-circle"></i> Đặt Vé Mới
+    </a>
+    }
+        
+</div>
+    <div class="mt-3">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fas fa-check-circle me-2"></i> @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-triangle me-2"></i> @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    </div>
+    <div class="card shadow border-0">
+        <div class="card-header bg-white py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <form method="get" action="@Url.Action("Index")" class="d-flex">
+                        <input type="text" name="searchString" class="form-control me-2" placeholder="Tìm theo tên khách hoặc SĐT..." />
+                        <button type="submit" class="btn btn-outline-primary"><i class="fas fa-search"></i> Tìm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            <div id="gridContent" class="table-responsive">
+                @grid.GetHtml(
+                    tableStyle: "table table-hover table-striped align-middle mb-0",
+                    footerStyle: "grid-footer",
+                    headerStyle: "bg-light text-primary fw-bold border-bottom",
+                    columns: grid.Columns(
+
+                            // 1. Sửa MaVe -> MaVeDaiDien
+                        grid.Column("MaVeDaiDien", "Mã Vé", style: "text-center fw-bold", format: @<text>@item.MaVeDaiDien</text>),
+
+// 2. Sửa KhachHang.TenKH -> TenKH (ViewModel đã lấy sẵn string rồi)
+grid.Column("TenKH", "Khách Hàng", format: @<text>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold">@item.TenKH</span>
+                    <small class="text-muted"><i class="fas fa-phone-alt"></i> @item.DienThoai</small>
+                </div>
+            </text>),
+
+// 3. Sửa thông tin Tuyến xe (Dùng các thuộc tính TenTuyen, NgayDi, GioDi của ViewModel)
+grid.Column("TenTuyen", "Tuyến Xe", format: @<text>
+                <small>@item.TenTuyen</small><br />
+                <small class="text-muted">@item.GioDi.ToString(@"hh\:mm") - @item.NgayDi.ToString("dd/MM/yyyy")</small>
+            </text>),
+
+// 4. Sửa SoGhe -> DanhSachGhe (Để hiện chuỗi gộp "3C, 4C")
+grid.Column("DanhSachGhe", "Ghế Đặt", style: "text-center", format:
+                        @<span class="badge bg-info text-dark" style="font-size:0.9em">@item.DanhSachGhe</span>
+),
+
+// 5. Sửa Gia -> TongTien
+grid.Column("TongTien", "Tổng Tiền", style: "text-end", format: item => string.Format("{0:N0} đ", item.TongTien)),
+
+grid.Column("ThoiGianDat", "Ngày Đặt", format: item => item.ThoiGianDat.ToString("dd/MM/yyyy HH:mm")),
+
+grid.Column("TrangThai", "Trạng Thái", style: "text-center", format: item =>
+{
+string status = item.TrangThai;
+string badgeClass = "bg-secondary";
+if (status == "Đã thanh toán" || status == "Hoàn tất") badgeClass = "bg-success";
+else if (status == "Chờ thanh toán" || status == "Đã đặt") badgeClass = "bg-warning text-dark";
+else if (status == "Đã hủy") badgeClass = "bg-danger";
+
+return Html.Raw($"<span class='badge {badgeClass}'>{status}</span>");
+}),
+
+// 6. Thêm cột chức năng
+grid.Column(header: "", format: @<text>
+                @if (HttpContext.Current.Session["TaiKhoan"] != null)
+                {
+                    <a href="@Url.Action("Edit", new { id = item.MaVeDaiDien })" class="btn btn-warning btn-sm text-white" title="Sửa">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <form action="@Url.Action("Delete", "Ve_65134257", new { id = item.MaVeDaiDien })" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-danger btn-sm"
+                                title="Xóa Vé"
+                                onclick="return confirm('Bạn có chắc chắn muốn xóa vé mã @item.MaVeDaiDien này không?');">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </form>
+                }
+
+
+            </text>)
+)
+)
+            </div>
+        </div>

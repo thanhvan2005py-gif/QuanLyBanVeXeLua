@@ -1,0 +1,399 @@
+﻿
+@using QLXeBusPhuongTrang_65134257.Models.ViewModels
+@{
+    // Ép kiểu các biến từ ViewBag
+    var chuyen = (QLXeBusPhuongTrang_65134257.Models.Chuyen)ViewBag.Chuyen;
+    var soCho = (int)ViewBag.SoCho;
+    var loaiXe = (string)ViewBag.LoaiXe;
+    var veDaDat = (List<GheTrangThaiVM>)ViewBag.VeDaDat;
+
+    ViewBag.Title = "Chọn Ghế";
+ 
+    ViewBag.ActivePage = "Tuyen";
+}
+
+<h2 class="text-primary"><i class="fas fa-bus-alt"></i> Đặt Vé: Chọn Ghế</h2>
+<h4 class="text-info">
+    @chuyen.LichChay.Tuyen.BenXe.TenBen <i class="fas fa-arrow-right"></i>
+    @chuyen.LichChay.Tuyen.BenXe1.TenBen -
+    Ngày: @chuyen.Ngay.ToString("dd/MM/yyyy")
+</h4>
+<p>Loại xe: <strong>@loaiXe</strong> | Ghế trống: <strong>@chuyen.SoGheTrong</strong></p>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow p-4 text-center">
+            <h5>Sơ Đồ Ghế (Tổng: @soCho)</h5>
+
+            <div id="seatMap"
+                 class="seat-map @(loaiXe.Contains("Giường") ? "seat-map-bed" : "seat-map-chair")">
+            </div>
+
+            <div class="mt-4 p-2 border rounded">
+                <span class="seat-legend bg-success"></span> Ghế Trống
+                <span class="seat-legend bg-warning"></span> Đã Đặt
+                <span class="seat-legend bg-danger"></span> Đã Thanh Toán
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6">
+        <div class="card shadow p-4">
+            <h5 class="card-title fw-bold text-uppercase text-primary border-bottom pb-2 mb-3">
+                <i class="fas fa-clipboard-check  me-2"></i>Thông Tin Đặt Vé
+            </h5>
+            <div class="mb-1 ">
+                <strong>Tuyến:</strong>
+                <span class="text-primary fw-bold">@chuyen.LichChay.Tuyen.TenTuyen</span>
+            </div>
+            <label class="fw-bold">Ghế đã chọn:</label>
+            <div id="selectedSeatsList" class="p-2 border bg-light rounded">
+                Chưa chọn ghế nào.
+            </div>
+
+            @* Form gửi dữ liệu đặt vé đến VeController/DatVe *@
+            @using (Html.BeginForm("DatVe", "Ve_65134257", FormMethod.Post, new { id = "bookingForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.Hidden("MaChuyen", chuyen.MaChuyen)
+                <input type="hidden" id="ListSoGheInput" name="ListSoGhe" required />
+                <h6 class=" mt-3 fw-bold">Thông Tin Khách Hàng:</h6>
+                <div class="mb-2">
+                    <strong>Khách hàng:</strong>
+                    <input type="hidden" name="TenKH" value="@ViewBag.TenKH" />
+                    <span class="text-primary">@ViewBag.TenKH</span>
+                </div>
+
+                <div class="mb-2">
+                    <strong>Số điện thoại:</strong>
+                    <input type="hidden" name="DienThoai" value="@ViewBag.DienThoai" />
+                    <span class="text-primary">@ViewBag.DienThoai</span>
+                </div>
+
+                <div class="alert alert-info mt-3">
+                    Tổng tiền: <b id="totalPriceDisplay">0 VNĐ</b>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 btn-lg mt-2">
+                    <i class="fas fa-check-circle"></i> Đặt Vé & Thanh Toán
+                </button>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+
+    <style>
+        .seat-map {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
+
+        /* ----------------------------------- */
+        /* === CẬP NHẬT CSS CHO GHẾ NGỒI === */
+        /* ----------------------------------- */
+        .seat-map-chair {
+            /* Cột 1(A) | Cột 2(B) | Lối đi (0.7fr) | Cột 3(C) | Cột 4(D) */
+            grid-template-columns: 1fr 1fr 0.7fr 1fr 1fr;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        /* Lối đi ảo (chỉ cho xe ghế ngồi) */
+        .aisle-gap {
+            grid-column: 3 / span 1;
+            background-color: transparent !important;
+            border: none !important;
+            cursor: default !important;
+            padding: 0;
+            min-height: 0;
+            box-shadow: none;
+        }
+
+        /* ----------------------------------- */
+        /* === CẬP NHẬT CSS CHO GIƯỜNG NẰM === */
+        /* ----------------------------------- */
+        .seat-map-bed {
+            /* 3 cột đều: A | B | C */
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 400px; /* Phù hợp với 3 cột */
+            margin: auto;
+        }
+
+        .floor-separator {
+            grid-column: 1 / -1; /* Kéo dài qua 3 cột */
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        /* ----------------------------------- */
+        /* === ĐỊNH DẠNG CHUNG CỦA GHẾ/GIƯỜNG === */
+        /* ----------------------------------- */
+        .bus-front {
+            grid-column: 1 / -1; /* Kéo dài qua tất cả các cột grid hiện tại */
+            text-align: left;
+            padding: 5px 0;
+            font-weight: bold;
+        }
+
+        .seat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0; /* Tăng padding */
+            min-height: 90px; /* Tăng chiều cao ghế/giường */
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .seat-icon {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .seat-info {
+            font-size: 13px;
+            color: white;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .seat-code {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .seat-price {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Các trạng thái màu sắc */
+        .available {
+            background: #4CAF50; /* Xanh lá */
+        }
+
+        .selected {
+            background: #2196F3; /* Xanh dương */
+        }
+
+        .booked {
+            background: #ffc107; /* Vàng */
+            cursor: not-allowed;
+            color: #333;
+        }
+
+        .paid {
+            background: #dc3545; /* Đỏ */
+            cursor: not-allowed;
+        }
+
+        .booked .seat-icon, .booked .seat-info {
+            color: #333;
+        }
+
+        .seat:hover:not(.booked):not(.paid) {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .seat-legend {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+    </style>
+
+    <script>
+$(document).ready(function () {
+    const totalSeats = @soCho;
+    if (totalSeats <= 0) {
+        $("#seatMap").html('<div class="alert alert-danger">Xe không có chỗ ngồi/ghế nằm.</div>');
+        return;
+    }
+
+    const loaiXe = '@loaiXe';
+    const veDaDat = @Html.Raw(Json.Encode(ViewBag.VeDaDat));
+    const GIA_VE_HIEN_TAI = @(Model != null && Model.GiaVe > 0 ? Model.GiaVe : 0);
+
+    let selectedSeats = [];
+    const seatMap = $("#seatMap");
+    const listSoGheInput = $("#ListSoGheInput");
+    const selectedSeatsList = $("#selectedSeatsList");
+
+
+    // *** MẢNG ĐỊNH NGHĨA CẤU TRÚC GIƯỜNG 6A, 5B, 6C (Tổng 34 giường) ***
+    const BED_MAP = [
+        // Tầng Dưới (17 giường đầu tiên)
+        '1A', '1B', '1C', '2A', '2B', '2C', '3A', '3B', '3C', '4A',
+        '4A', '4C', '5A', '5A', '5C', '6A', '6B',
+
+        // Tầng Trên (17 giường tiếp theo)
+        '7A', '7B', '6C', '8A', '8B', '7C', '9A', '9B', '8C', '10A',
+        '10B', '9C', '11A', '11A', '10C', '12A', '12B'
+    ];
+
+
+    // *** HÀM: CHUYỂN SỐ THỨ TỰ THÀNH MÃ GHẾ/GIƯỜNG ***
+    function getSeatId(index, loaiXe) {
+        if (loaiXe.includes("Giường")) {
+            if (index >= 1 && index <= BED_MAP.length) {
+                return BED_MAP[index - 1];
+            }
+            return 'INVALID';
+        } else {
+            // Ghế ngồi (4 cột: A, B, C, D)
+            const row = Math.ceil(index / 4);
+            const posIndex = index % 4;
+
+            const positions = ['D', 'A', 'B', 'C'];
+            const pos = positions[posIndex];
+
+            return row + pos;
+        }
+    }
+
+    // *** HÀM: XÁC ĐỊNH GIÁ DỰA TRÊN MÃ GHẾ/GIƯỜNG ***
+    function getSeatPrice(seatId) {
+        // Kiểm tra mã ghế hợp lệ
+        if (!seatId || seatId === 'INVALID') return 0;
+
+        // Trả về đúng giá đã cấu hình trong Database
+        // Không còn phân biệt A, B, C nữa (theo yêu cầu mới)
+        return GIA_VE_HIEN_TAI;
+    }
+
+    // *** HÀM: ĐỊNH NGHĨA ICON ***
+    function getSeatIcon(loaiXe) {
+        // Sử dụng icon giường nằm cho xe giường nằm
+        if (loaiXe.includes("Giường")) {
+            return 'bi bi-window-desktop';
+        }
+        // Giữ nguyên icon xe buýt cho xe ghế ngồi
+        return 'bi bi-bus-front';
+    }
+
+
+    // *** HÀM VẼ SƠ ĐỒ GHẾ (ĐÃ CẬP NHẬT PHÂN TẦNG) ***
+    function drawSeatMap() {
+        const container = $("#seatMap");
+        container.empty();
+
+
+        const seatIconClass = getSeatIcon(loaiXe);
+
+        // Tính số giường mỗi tầng (17 giường)
+        const bedsPerFloor = loaiXe.includes("Giường") ? Math.floor(totalSeats / 2) : 0;
+
+        // Gắn nhãn Tầng Dưới
+        if (loaiXe.includes("Giường")) {
+             container.append('<div class="floor-separator" style="grid-column: 1 / -1; margin: 0 0 10px 0; border: none; padding-top: 0;">--- Tầng Dưới ---</div>');
+        }
+
+
+        for (let i = 1; i <= totalSeats; i++) {
+
+            // *** LOGIC PHÂN CÁCH TẦNG CHO XE GIƯỜNG NẰM ***
+            if (loaiXe.includes("Giường") && i === bedsPerFloor + 1) {
+                // Chèn thẻ phân cách giữa tầng dưới và tầng trên
+                container.append('<div class="floor-separator">--- Tầng Trên ---</div>');
+            }
+
+            const seatId = getSeatId(i, loaiXe);
+            let status = "available";
+            const price = getSeatPrice(seatId);
+
+            const check = veDaDat.find(x => x.SoGhe === seatId);
+
+            if (check) {
+                if (check.TrangThai === "Đã thanh toán") status = "paid";
+                else status = "booked";
+            }
+
+            const iconHtml = `<i class="${seatIconClass} seat-icon"></i>`;
+            const infoHtml = `<div class="seat-info">
+                                <span class="seat-code">${seatId}</span><br/>
+                                <span class="seat-price">${(price / 1000).toLocaleString("vi-VN")}K</span>
+                              </div>`;
+
+            const seat = $("<div>")
+                .addClass("seat " + status)
+                .attr("data-seat", seatId)
+                .attr("data-price", price)
+                .html(iconHtml + infoHtml);
+
+            container.append(seat);
+
+            // *** LOGIC CHÈN LỐI ĐI CHỈ ÁP DỤNG CHO XE GHẾ NGỒI ***
+            if (!loaiXe.includes("Giường")) {
+                const column = seatId.slice(-1);
+
+                // Sau mỗi ghế cột 'B', chèn một ô trống (lối đi)
+                if (column === 'B') {
+                    container.append($('<div class="aisle-gap"></div>'));
+                }
+            }
+        }
+    }
+
+    // *** CẬP NHẬT HÀM updateUI (Giữ nguyên) ***
+    function updateUI() {
+        $("#ListSoGheInput").val(selectedSeats.join(","));
+
+        if (selectedSeats.length === 0) {
+            $("#selectedSeatsList").text("Chưa chọn ghế nào.");
+            $("#totalPriceDisplay").text("0 VNĐ");
+            return;
+        }
+
+        $("#selectedSeatsList").text(selectedSeats.join(", "));
+
+
+
+        const totalPrice = selectedSeats.length * GIA_VE_HIEN_TAI;
+
+        $("#totalPriceDisplay").text(
+            totalPrice.toLocaleString("vi-VN") + " VNĐ"
+        );
+    }
+
+    // Xử lý sự kiện khi click vào ghế (Giữ nguyên)
+    $("#seatMap").on("click", ".seat", function () {
+        const seat = $(this);
+        const id = seat.data("seat");
+
+        if (seat.hasClass("booked") || seat.hasClass("paid"))
+            return;
+
+        if (seat.hasClass("selected")) {
+            seat.removeClass("selected").addClass("available");
+            selectedSeats = selectedSeats.filter(s => s !== id);
+        } else {
+            seat.removeClass("available").addClass("selected");
+            selectedSeats.push(id);
+        }
+
+        updateUI();
+    });
+
+    drawSeatMap();
+
+});
+    </script>
+}
+

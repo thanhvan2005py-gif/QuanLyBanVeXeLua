@@ -1,0 +1,13 @@
+﻿@{
+    // Logic tự động chọn Layout cho toàn bộ hệ thống
+    if (HttpContext.Current.Session["TaiKhoan"] != null)
+    {
+        // Nếu là Admin -> Dùng Layout Admin
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        // Nếu là Khách hoặc chưa đăng nhập -> Dùng Layout Khách
+        Layout = "~/Views/Shared/_LayoutKhach.cshtml";
+    }
+}

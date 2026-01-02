@@ -1,0 +1,51 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.Xe
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Xe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BienSo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BienSo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoCho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoCho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiXe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiXe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangThai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaXe }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

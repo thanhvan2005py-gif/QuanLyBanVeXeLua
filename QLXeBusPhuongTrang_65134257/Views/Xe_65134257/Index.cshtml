@@ -1,0 +1,162 @@
+﻿@model IEnumerable<QLXeBusPhuongTrang_65134257.Models.Xe>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container-fluid py-4">
+    <div class="card shadow-lg border-0 rounded-4">
+
+        <div class="card-header bg-white py-3 rounded-top-4">
+            <h4 class="mb-0 fw-bold text-center text-success">
+                <i class="fas fa-users-cog me-2"></i> DANH SÁCH XE
+            </h4>
+        </div>
+
+        <div class="card-body p-4 p-md-5">
+
+            <div class="d-flex justify-content-end mb-4">
+                @Html.ActionLink("Thêm Xe Mới", "Create", null, new { @class = "btn btn-success px-4 rounded-pill shadow-sm" })
+            </div>
+            <div class="mt-3">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="fas fa-check-circle me-2"></i> @TempData["Success"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i> @TempData["Error"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped table-bordered align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" class="text-center" style="width: 5%;">STT</th>
+                            <th scope="col">
+                                <i class="fas fa-barcode me-2 text-danger"></i> BIỂN SỐ XE
+                            </th>
+                            <th scope="col" class="text-center">
+                                <i class="fas fa-chair me-2 text-warning"></i> SỐ CHỖ
+                            </th>
+                            <th scope="col" class="text-center">
+                                <i class="fas fa-car-side me-2 text-info"></i> LOẠI XE
+                            </th>
+                            <th scope="col" class="text-center">
+                                <i class="fas fa-info-circle me-2 text-secondary"></i> TRẠNG THÁI
+                            </th>
+                            <th scope="col" class="text-center" style="width: 20%;">Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int rowNum = 1; }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th scope="row" class="text-center text-muted">@rowNum</th>
+                                <td>
+                                    <strong>@Html.DisplayFor(modelItem => item.BienSo)</strong>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge bg-success p-2">@Html.DisplayFor(modelItem => item.SoCho)</span>
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.LoaiXe)
+                                </td>
+                                <td class="text-center">
+                                    @{
+                                        // Định dạng màu sắc Trạng Thái
+                                        string statusClass = "";
+                                        string trangThai = Html.DisplayFor(modelItem => item.TrangThai).ToString().Trim().ToLower();
+
+                                        if (trangThai == "đang hoạt động" || trangThai == "sẵn sàng")
+                                        {
+                                            statusClass = "bg-primary";
+                                        }
+                                        else if (trangThai == "bảo trì" || trangThai == "sửa chữa")
+                                        {
+                                            statusClass = "bg-warning text-dark";
+                                        }
+                                        else
+                                        {
+                                            statusClass = "bg-danger";
+                                        }
+                                    }
+                                    <span class="badge @statusClass p-2">@Html.DisplayFor(modelItem => item.TrangThai)</span>
+                                </td>
+                                <td class="text-center">
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        @Html.ActionLink("Sửa", "Edit", new { id = item.MaXe }, new { @class = "btn btn-outline-primary", title = "Chỉnh sửa" })
+                                        <form action="@Url.Action("Delete", "Xe_65134257", new { id = item.MaXe })" method="post" style="display:inline;">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-danger btn-sm"
+                                                    title="Xóa Xe"
+                                                    onclick="return confirm('Bạn có chắc chắn muốn xóa xe biển số @item.BienSo này không?');">
+                                                Xóa
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            rowNum++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="alert alert-warning text-center mt-4" role="alert">
+                    <i class="fas fa-exclamation-triangle me-2"></i> Hiện chưa có xe nào trong hệ thống.
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* CSS Tùy chỉnh cho bảng */
+    .table thead th {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #333;
+    }
+
+    .table-bordered {
+        border-color: #dee2e6;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+        background-color: #f8f9fa; /* Màu nền nhẹ cho hàng lẻ */
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #e3f2fd; /* Màu xanh nhạt khi hover */
+        cursor: pointer;
+    }
+
+    .btn-group-sm .btn {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.75rem;
+    }
+
+    /* Đảm bảo nút Create New nổi bật */
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        transition: background-color 0.2s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0a58ca;
+            border-color: #0a58ca;
+        }
+</style>

@@ -1,0 +1,173 @@
+﻿@model IEnumerable<QLXeBusPhuongTrang_65134257.Models.Tuyen>
+
+@{
+    ViewBag.Title = "Index";
+
+    var grid = new WebGrid(
+        source: Model,
+        rowsPerPage: 10,
+        canPage: true,
+        canSort: true
+    );
+    ViewBag.ActivePage = "Tuyen";
+}
+
+<h2 class="text-primary"><i class="fas fa-route"></i> Danh Sách Tuyến Đường</h2>
+
+<hr />
+@* FORM TÌM KIẾM/LỌC *@
+
+@using (Html.BeginForm("Index", "Tuyen_65134257", FormMethod.Get, new { @class = "mb-4 card shadow-sm p-3 bg-light" }))
+{
+    <div class="mt-3">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fas fa-check-circle me-2"></i> @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-triangle me-2"></i> @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    </div>
+    <div class="row align-items-end">
+
+        @* Dropdown Bến Đi *@
+        <div class="col-md-4 mb-2">
+            <label for="BenDauId" class="form-label fw-bold">Bến Đi </label>
+            @Html.DropDownList("BenDauId", (SelectList)ViewBag.BenDauId, "--- Chọn Bến Đi ---", new { @class = "form-select" })
+        </div>
+
+        @* Dropdown Bến Đến *@
+        <div class="col-md-4 mb-2">
+            <label for="BenCuoiId" class="form-label fw-bold">Bến Đến</label>
+            @Html.DropDownList("BenCuoiId", (SelectList)ViewBag.BenCuoiId, "--- Chọn Bến Đến ---", new { @class = "form-select" })
+        </div>
+
+        @* Nút Tìm Kiếm và Reset *@
+        <div class="col-md-4 mb-2 d-flex justify-content-start">
+            <button type="submit" class="btn btn-primary me-2"><i class="fas fa-search"></i> Tìm Kiếm</button>
+            <a href="@Url.Action("Index", "Tuyen_65134257")" class="btn btn-secondary"><i class="fas fa-redo"></i> Nhập Mới</a>
+        </div>
+    </div>
+}
+@if (HttpContext.Current.Session["TaiKhoan"] != null)
+{   
+    
+    <div class="d-flex justify-content-between mb-4">
+        <p>
+            @Html.ActionLink("➕ Thêm Tuyến Mới", "Create", null, new { @class = "btn btn-success mb-3" })
+        </p>
+        <p>
+            @Html.ActionLink("Thêm Lịch Chạy","Create", "LichChay_65134257", null, new { @class = "btn btn-success mb-3" })
+        </p>
+    </div>
+}
+
+
+@* ========================================= *@
+@* Hiển thị WebGrid *@
+@* ========================================= *@
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        @grid.GetHtml(
+            tableStyle: "table table-bordered table-hover",
+            headerStyle: "thead-light",
+            footerStyle: "grid-footer",
+            // Thiết lập cột hiển thị và sắp xếp
+            columns: grid.Columns(
+                grid.Column(
+                    columnName: "TenTuyen",
+                    header: "Tên Tuyến",
+                    style: "col-tuyen"
+                ),
+                grid.Column(
+                    columnName: "QuangDuongKm",
+                    header: "Quãng Đường(km)",
+                    style: "col-km"
+                ),
+                grid.Column(
+                    // BenXe là Tên Bến Đầu (ví dụ: Nha Trang)
+                    columnName: "BenDau",
+                    header: "Bến Đi",
+                    format: item => item.BenXe1.TenBen // Sử dụng Navigation Property để hiển thị tên
+                ),
+                grid.Column(
+                    // BenXe1 là Tên Bến Cuối (ví dụ: TP.HCM)
+                    columnName: "BenCuoi",
+                    header: "Bến Đến",
+                    format: item => item.BenXe.TenBen // Sử dụng Navigation Property để hiển thị tên
+                ),
+                grid.Column(
+                    header: "Đặt Vé",
+                    format: @<text>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="@Url.Action("LichChay", "Chuyen_65134257", new { id = item.MaTuyen })" class="btn btn-primary btn-sm">Lịch Chạy</a>
+                                @if (HttpContext.Current.Session["TaiKhoan"] != null)
+                                {
+                                    <a href="@Url.Action("Edit", new { id = item.MaTuyen })" class="btn btn-warning btn-sm text-white" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <form action="@Url.Action("Delete", "Tuyen_65134257", new { id = item.MaTuyen })" method="post" style="display:inline;">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                title="Xóa"
+                                                onclick="return confirm('Bạn có chắc chắn muốn xóa tuyến @item.TenTuyen này không?');">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </form>
+                                }
+                            </div>
+                    </text>
+)
+)
+)
+    </div>
+</div>
+
+
+@section scripts {
+    <style>
+        .table th a {
+            text-decoration: none !important;
+        }
+
+        .table th {
+            color: #0d6efd !important;
+            font-weight: bold;
+        }
+
+            .table th a:hover {
+                text-decoration: none !important;
+            }
+
+        .grid-footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+            .grid-footer a {
+                color: #333;
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 6px 12px;
+                margin: 0 2px;
+                text-decoration: none;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+
+                .grid-footer a:hover, .grid-footer .active {
+                    background-color: #007bff; /* Màu chủ đạo */
+                    color: #fff;
+                    border-color: #007bff;
+                }
+    </style>
+}

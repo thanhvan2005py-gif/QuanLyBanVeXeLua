@@ -1,0 +1,64 @@
+﻿@model IEnumerable<QLXeBusPhuongTrang_65134257.Models.Chuyen>
+
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+<table class="table table-bordered table-hover">
+    <thead class="thead-light">
+        <tr class="text-center">
+            <th>
+                Ngày Khởi Hành
+            </th>
+            <th>
+                Số Ghế Trống
+            </th>
+            <th>
+                Giá Vé (VNĐ)
+            </th>
+            <th>
+                Trạng Thái
+            </th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.Ngay)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.SoGheTrong)
+                </td>
+
+                <td class="text-center">
+                    @if (item.GiaVe > 0)
+                    {
+                        // Hiển thị số tiền đẹp mắt (200,000) và in đậm màu xanh
+                        <strong style="color: #28a745;">
+                            @string.Format("{0:#,##0}", item.GiaVe) đ
+                        </strong>
+                    }
+                    else
+                    {
+                        // Nếu giá = 0 hoặc null thì báo đỏ
+                        <span style="color: red; font-style: italic;">Chưa nhập giá</span>
+                    }
+                </td>
+
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.LichChay.TrangThai)
+                </td>
+                <td class="text-center">
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaChuyen }, new { @class = "btn btn-sm btn-warning" })
+                    
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.MaChuyen }, new { @class = "btn btn-sm btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

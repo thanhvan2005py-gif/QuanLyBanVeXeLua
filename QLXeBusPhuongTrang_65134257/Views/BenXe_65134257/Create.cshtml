@@ -1,0 +1,58 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.BenXe
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-3">
+
+                @* HEADER: Đồng bộ với Index và Edit (Nền trắng, Chữ xanh lá cây) *@
+                <div class="card-header bg-white py-3 rounded-top-3 border-bottom">
+                    <h4 class="mb-0 fw-bold text-center text-success">
+                        <i class="fas fa-plus-circle me-2"></i> THÊM BẾN XE MỚI
+                    </h4>
+                </div>
+
+                <div class="card-body p-4">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                        @* 1. Trường Tên Bến *@
+                        <div class="mb-3">
+                            @Html.LabelFor(model => model.TenBen,"Tên Bến", htmlAttributes: new { @class = "form-label fw-bold" })
+                            @Html.EditorFor(model => model.TenBen, new { htmlAttributes = new { @class = "form-control form-control-lg", placeholder = "Nhập tên bến xe... " } })
+                            @Html.ValidationMessageFor(model => model.TenBen, "", new { @class = "text-danger" })
+                        </div>
+
+                        @* 2. Trường Địa Chỉ *@
+                        <div class="mb-4">
+                            @Html.LabelFor(model => model.DiaChi,"Địa Chỉ", htmlAttributes: new { @class = "form-label fw-bold" })
+                            @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control form-control-lg", placeholder = "Nhập địa chỉ chi tiết..." } })
+                            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                        </div>
+
+                        <hr />
+
+                        @* NÚT THAO TÁC *@
+                        <div class="d-flex justify-content-end gap-2 mt-4">
+                            @* Quay lại danh sách *@
+                            <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
+                                <i class="fas fa-arrow-left me-2"></i> Quay lại
+                            </a>
+                            @* Nút Thêm Mới *@
+                            <button type="submit" class="btn btn-success px-4 fw-bold shadow">
+                                <i class="fas fa-plus me-2"></i> THÊM BẾN XE
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

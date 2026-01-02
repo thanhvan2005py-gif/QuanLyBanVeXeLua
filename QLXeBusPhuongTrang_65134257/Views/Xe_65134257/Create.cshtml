@@ -1,0 +1,76 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.Xe
+
+@{
+    ViewBag.Title = "Create";
+}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                
+                <div class="card-header bg-white py-3 rounded-top-4">
+                    <h4 class="mb-0 fw-bold text-success">
+                        🚘 Thêm Xe Mới
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @* Hiển thị tóm tắt lỗi chung nếu có *@
+                            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                            @* Trường Biển Số *@
+                            <div class="form-group row mb-3">
+                                @Html.LabelFor(model => model.BienSo, "Biển Số", new { @class = "col-md-3 col-form-label" })
+                                <div class="col-md-9">
+                                    @Html.EditorFor(model => model.BienSo, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập biển số xe" } })
+                                    @Html.ValidationMessageFor(model => model.BienSo, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Trường Số Chỗ *@
+                            <div class="form-group row mb-3">
+                                @Html.LabelFor(model => model.SoCho, "Số Chỗ", new { @class = "col-md-3 col-form-label" })
+                                <div class="col-md-9">
+                                    @Html.EditorFor(model => model.SoCho, new { htmlAttributes = new { @class = "form-control", type = "number", min = "1", placeholder = "Nhập số chỗ ngồi" } })
+                                    @Html.ValidationMessageFor(model => model.SoCho, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Trường Loại Xe *@
+                            <div class="form-group row mb-3">
+                                @Html.LabelFor(model => model.LoaiXe, "Loại Xe", new { @class = "col-md-3 col-form-label" })
+                                <div class="col-md-9">
+                                    @Html.EditorFor(model => model.LoaiXe, new { htmlAttributes = new { @class = "form-control", placeholder = "Ghế ngồi,Limousine,Giường nằm..." } })
+                                    @Html.ValidationMessageFor(model => model.LoaiXe, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Trường Trạng Thái (Có thể thay bằng Dropdownlist nếu là giá trị cố định) *@
+                            <div class="form-group row mb-4">
+                                @Html.LabelFor(model => model.TrangThai, "Trạng Thái", new { @class = "col-md-3 col-form-label" })
+                                <div class="col-md-9">
+                                    @Html.EditorFor(model => model.TrangThai, new { htmlAttributes = new { @class = "form-control", placeholder = " Bảo trì, Hoạt động..." } })
+                                    @Html.ValidationMessageFor(model => model.TrangThai, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Nút Submit *@
+                            <div class="form-group row">
+                                <div class="col-md-9 offset-md-3">
+                                    <input type="submit" value="➕ Thêm Xe" class="btn btn-success btn-lg" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer text-end">
+                    @Html.ActionLink("Quay lại Danh sách", "Index", null, new { @class = "btn btn-outline-secondary" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

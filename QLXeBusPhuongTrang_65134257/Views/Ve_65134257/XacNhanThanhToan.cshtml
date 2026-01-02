@@ -1,0 +1,134 @@
+﻿@using QLXeBusPhuongTrang_65134257.Models
+@{
+    var veInfo = (Ve)ViewBag.VeInfo;
+    var totalAmount = (decimal)ViewBag.TotalAmount;
+
+    // Lấy số lượng vé từ JSON list
+    var listIds = Newtonsoft.Json.JsonConvert.DeserializeObject<List<int>>((string)ViewBag.MaVeListJson);
+    int soLuongVe = listIds != null ? listIds.Count : 0;
+
+    ViewBag.Title = "Xác Nhận Thanh Toán";
+    // --- CẤU HÌNH VIETQR TỰ ĐỘNG ---
+    string bankId = "ICB"; // Mã ngân hàng (MB, VCB, ICB...)
+    string soTaiKhoan = "103876242538";
+    string tenChuTaiKhoan = "NGUYEN THANH VAN";
+
+    // Nội dung: Tên khách - Số điện thoại (Bỏ dấu để tránh lỗi hiển thị trên một số app bank)
+    string noiDungCK = $"{veInfo.KhachHang.TenKH} {veInfo.KhachHang.DienThoai}";
+    // Link VietQR: Sử dụng template 'qr_only' hoặc 'compact'
+    string qrUrl = $"https://img.vietqr.io/image/{bankId}-{soTaiKhoan}-compact.png" +
+           $"?amount={Convert.ToInt64(totalAmount)}" +
+           $"&addInfo={Uri.EscapeDataString(noiDungCK)}" +
+           $"&accountName={Uri.EscapeDataString(tenChuTaiKhoan)}";
+    // Logic chọn Layout tự động để tránh lỗi giao diện
+    if (Session["TaiKhoan"] != null)
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_LayoutKhach.cshtml";
+    }
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h4 class="mb-0 fw-bold"><i class="fas fa-qrcode me-2"></i> THANH TOÁN QR CODE</h4>
+                </div>
+                <div class="card-body p-4">
+
+                    @* --- PHẦN 1: THÔNG TIN VÉ (Tóm tắt gọn lại) --- *@
+                    <div class="bg-light p-3 rounded mb-4 border">
+                        <h6 class="text-primary fw-bold border-bottom pb-2"><i class="fas fa-ticket-alt me-2"></i>Thông tin đặt vé</h6>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-muted">Tên chuyến:</span>
+                            <span class="text-primary fw-bold">@veInfo.Chuyen.LichChay.Tuyen.TenTuyen</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-muted">Khách hàng:</span>
+                            <span class="fw-bold">@veInfo.KhachHang.TenKH</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-muted">Tuyến xe:</span>
+                            <span class="fw-bold text-end">@veInfo.Chuyen.LichChay.Tuyen.BenXe.TenBen <i class="fas fa-arrow-right mx-1"></i> @veInfo.Chuyen.LichChay.Tuyen.BenXe1.TenBen</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-muted">Khởi hành:</span>
+                            <span class="fw-bold text-danger">@veInfo.Chuyen.LichChay.GioKhoiHanh.ToString(@"hh\:mm") - @veInfo.Chuyen.Ngay.ToString("dd/MM/yyyy")</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Tổng số vé:</span>
+                            <span class="badge bg-info text-dark">@soLuongVe vé</span>
+                        </div>
+                    </div>
+
+                    @* --- PHẦN 2: FORM THANH TOÁN --- *@
+                <form action="@Url.Action("HoanTatThanhToan", "Ve_65134257")" method="post" id="paymentForm">
+
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("MaVeListJson", (string)ViewBag.MaVeListJson)
+                    @Html.Hidden("TotalAmount", totalAmount)
+
+                    @* QUAN TRỌNG: Gửi cứng giá trị Chuyển khoản về Controller *@
+                    <input type="hidden" name="PhuongThuc" value="Chuyển khoản" />
+
+                    @* --- PHẦN 3: HIỂN THỊ MÃ QR TỰ ĐỘNG --- *@
+                    <div class="text-center">
+                        <h5 class="fw-bold text-dark mb-3">VUI LÒNG QUÉT MÃ QR BÊN DƯỚI</h5>
+
+                        <div class="p-2 d-inline-block border rounded shadow-sm bg-white">
+                            @* Thay thế hình ảnh tĩnh bằng URL động *@
+                            <img src="@qrUrl"
+                                 alt="Mã QR Thanh Toán Tự Động"
+                                 class="img-fluid"
+                                 style="width: 300px; min-height: 300px; object-fit: contain;">
+                        </div>
+
+                        <div class="mt-4 alert alert-warning d-inline-block w-100">
+                            <p class="mb-0 small text-muted">Số tiền cần thanh toán:</p>
+                            <h3 class="fw-bold text-danger mb-0">@totalAmount.ToString("N0") VNĐ</h3>
+                        </div>
+
+                        <p class="small text-muted fst-italic mt-2">
+                            <i class="fas fa-info-circle"></i> Nội dung đã được tích hợp: <strong>@noiDungCK</strong>
+                        </p>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <div class="alert alert-info small">
+                        <i class="fas fa-exclamation-circle"></i> Lưu ý: Sau khi bấm nút xác nhận, vé của bạn sẽ ở trạng thái <strong>"Chờ duyệt"</strong>. Hệ thống sẽ tự động xác thực vé sau khi nhận được tiền vào tài khoản.
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" onclick="confirmTransfer()" class="btn btn-success btn-lg fw-bold shadow">
+                            <i class="fas fa-check-double me-2"></i> TÔI ĐÃ CHUYỂN KHOẢN XONG
+                        </button>
+                        <a href="@Url.Action("Index", "Tuyen_65134257")" class="btn btn-light text-muted">Để sau, quay về trang chủ</a>
+                    </div>
+                    @section Scripts {
+                        <script>
+                            function confirmTransfer() {
+                                if (confirm("Bạn xác nhận đã thực hiện chuyển khoản\n\nHãy đợi admin duyệt và gửi về Email của bạn trong 15 phút.")) {
+                                    // Bây giờ nó sẽ tìm thấy form vì ta đã đặt ID ở trên
+                                    var form = document.getElementById("paymentForm");
+                                    if (form) {
+                                        form.submit();
+                                    } else {
+                                        alert("Lỗi: Không tìm thấy form thanh toán!");
+                                    }
+                                }
+                            }
+                        </script>
+                    }
+
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Không cần section scripts nữa vì không cần xử lý ẩn hiện *@

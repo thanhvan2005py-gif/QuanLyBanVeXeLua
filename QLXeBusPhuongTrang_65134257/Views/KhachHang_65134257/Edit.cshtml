@@ -1,0 +1,86 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.KhachHang
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="container-fluid px-4">
+    <div class="my-4">
+        <h2 class="fw-bold" style="color: #ff6b00;">
+            <i class="fas fa-user-edit me-2"></i> CẬP NHẬT THÔNG TIN
+        </h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index")" class="text-decoration-none text-secondary">Danh sách khách hàng</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card shadow border-0 mb-4">
+        <div class="card-header bg-white py-3 border-bottom-warning" style="border-bottom: 2px solid #ff6b00;">
+            <h5 class="m-0 fw-bold text-secondary">Thông tin tài khoản: <span class="text-primary">@Model.TenKH</span></h5>
+        </div>
+
+        <div class="card-body p-4">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.MaKH)
+                @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold text-secondary">Họ và Tên <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-user"></i></span>
+                                @Html.EditorFor(model => model.TenKH, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập họ tên..." } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.TenKH, "", new { @class = "text-danger small" })
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold text-secondary">Số Điện Thoại <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-phone"></i></span>
+                                @Html.EditorFor(model => model.DienThoai, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập số điện thoại..." } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger small" })
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold text-secondary">Email <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-envelope"></i></span>
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập email..." } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger small" })
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold text-secondary">Mật Khẩu</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-lock"></i></span>
+                                @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger small" })
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="d-flex justify-content-end gap-2">
+                    <a href="@Url.Action("Index")" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn text-white fw-bold shadow-sm" style="background-color: #ff6b00; min-width: 120px;">
+                        <i class="fas fa-save me-1"></i> Lưu thay đổi
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

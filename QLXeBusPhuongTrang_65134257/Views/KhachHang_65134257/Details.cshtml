@@ -1,0 +1,64 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.KhachHang
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-gradient text-white py-3" style="background: linear-gradient(90deg, #ff6b00, #ff8800);">
+                    <h4 class="mb-0 fw-bold"><i class="fas fa-id-card me-2"></i>THÔNG TIN TÀI KHOẢN</h4>
+                </div>
+
+                <div class="card-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-4 mb-md-0 border-end">
+                            <div class="d-inline-block p-1 border border-2 border-warning rounded-circle mb-3">
+                                <img src="https://ui-avatars.com/api/?name=@Model.TenKH&background=ff6b00&color=fff&size=150"
+                                     alt="Avatar" class="rounded-circle shadow-sm" width="120" height="120">
+                            </div>
+                            <h5 class="fw-bold text-dark mb-1">@Model.TenKH</h5>
+                        </div>
+
+                        <div class="col-md-8 ps-md-4">
+                            <h6 class="text-muted text-uppercase fw-bold mb-3 small">Thông tin liên hệ</h6>
+
+                            <div class="row mb-3">
+                                <label class="col-sm-4 fw-bold text-secondary">
+                                    <i class="fas fa-envelope me-2 text-warning"></i>Email:
+                                </label>
+                                <div class="col-sm-8 text-dark">
+                                    @Html.DisplayFor(model => model.Email)
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label class="col-sm-4 fw-bold text-secondary">
+                                    <i class="fas fa-phone me-2 text-warning"></i>Số điện thoại:
+                                </label>
+                                <div class="col-sm-8 text-dark font-monospace">
+                                    @Html.DisplayFor(model => model.DienThoai)
+                                </div>
+                            </div>
+
+                            <hr class="my-4 text-muted">
+
+                            <h6 class="text-muted text-uppercase fw-bold mb-3 small">Bảo mật</h6>
+
+                            <div class="row mb-3">
+                                <label class="col-sm-4 fw-bold text-secondary">
+                                    <i class="fas fa-key me-2 text-warning"></i>Mật khẩu:
+                                </label>
+                                <div class="col-sm-8 d-flex align-items-center">
+                                    @Html.DisplayFor(model => model.MatKhau)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

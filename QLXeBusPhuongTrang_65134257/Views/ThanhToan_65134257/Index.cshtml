@@ -1,0 +1,170 @@
+﻿
+@using QLXeBusPhuongTrang_65134257.Models.ViewModels
+@model IEnumerable<ThanhToanHienThiViewModel>
+
+@{
+    ViewBag.Title = "Index";
+   
+    var grid = new WebGrid(source: Model, canPage: true, rowsPerPage: 10, defaultSort: "STT");
+}
+<style>
+    /* CSS Tùy chỉnh cho Grid */
+    .table-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .grid-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+    }
+
+        .grid-table th {
+            background-color: #f8f9fa; /* Màu nền header */
+            color: #333;
+            font-weight: bold;
+            padding: 12px;
+            border-bottom: 2px solid #dee2e6;
+            text-align: left;
+        }
+
+        .grid-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+
+        .grid-table tr:hover {
+            background-color: #f1f1f1; /* Hiệu ứng hover dòng */
+        }
+
+    /* Style cho phân trang (Footer) */
+    .grid-footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+        .grid-footer a {
+            color: #333;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 6px 12px;
+            margin: 0 2px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+            .grid-footer a:hover, .grid-footer .active {
+                background-color: #007bff; /* Màu chủ đạo */
+                color: #fff;
+                border-color: #007bff;
+            }
+
+    /* Style nút Thêm mới */
+    .btn-create {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+        .btn-create:hover {
+            background-color: #218838;
+            color: white;
+            text-decoration: none;
+        }
+
+    /* CSS MỚI: Style cho cột chức năng Button Group */
+    .grid-table td.actions {
+        width: 120px; /* Đặt chiều rộng cố định */
+        text-align: center;
+        padding: 5px 8px;
+    }
+
+    .btn-group .btn {
+        padding: 5px 8px; /* Tùy chỉnh nhỏ hơn */
+        margin: 0;
+    }
+</style>
+
+<h2 class="text-primary fw-bold"><i class="fas fa-ticket-alt"></i> Quản Lý Thanh Toán</h2>
+
+<div class="table-container">
+    <div class="mt-3">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fas fa-check-circle me-2"></i> @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-triangle me-2"></i> @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    </div>
+    @grid.GetHtml(
+        tableStyle: "grid-table",
+        headerStyle: "grid-header",
+        footerStyle: "grid-footer",
+        rowStyle: "grid-row",
+        alternatingRowStyle: "grid-alt-row",
+        columns: grid.Columns(
+            grid.Column(header: "STT", format: item => item.WebGrid.Rows.IndexOf(item) + 1 + (grid.PageIndex * grid.RowsPerPage)),
+
+            // 1. Cột Số Tiền
+            grid.Column("SoTien", "Tổng Tiền", format: item => string.Format("{0:N0} VNĐ", item.SoTien)),
+
+            grid.Column("PhuongThuc", "Phương Thức TT"),
+
+            // 2. Cột Thời Gian
+            grid.Column("ThoiGianThanhToan", "Thời Gian", format: item => item.ThoiGianThanhToan != null ? item.ThoiGianThanhToan.ToString("dd/MM/yyyy HH:mm") : ""),
+
+            // 3. Cột Trạng Thái (Thêm màu sắc cho đẹp nếu muốn)
+            grid.Column("TrangThai", "Trạng Thái", format: item =>
+                {
+                    string tt = item.TrangThai;
+                    string color = "black";
+                    if (tt == "Đã thanh toán") color = "green";
+                    else if (tt == "Chờ xử lý") color = "#d39e00"; // cam đậm
+                    return Html.Raw($"<span style='color:{color}; font-weight:bold'>{tt}</span>");
+                }),
+
+            // 4. Cột Số Ghế
+            grid.Column("DanhSachGhe", "Ghế Đã TT", style: "text-center"),
+            grid.Column("LoaiXe", "Loại Xe Đặt"),
+
+            // Cột Chức Năng MỚI
+            grid.Column(header: "Chức Năng", style: "actions", format: @<text>
+                    <div class="btn-group" role="group">
+                        @* Nút Chi tiết (Details) *@
+                        <a href="@Url.Action("Details", new { id = item.MaTT })" class="btn btn-info btn-sm text-white me-2" title="Chi tiết">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        @* Nút Xóa (Delete) *@
+                        <form action="@Url.Action("Delete", "ThanhToan_65134257", new { id = item.MaTT })" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    title="Xóa Thanh Toán"
+                                    onclick="return confirm('Bạn có chắc chắn muốn xóa giao dịch thanh toán #@item.MaTT này không?');">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </form>
+                    </div>
+            </text>)
+)
+)
+</div>

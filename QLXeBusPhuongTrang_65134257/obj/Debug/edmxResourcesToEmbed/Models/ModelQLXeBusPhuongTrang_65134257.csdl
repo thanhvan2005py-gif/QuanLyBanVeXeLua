@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLXeBusPhuongTrang_65134257Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BenXe">
+    <Key>
+      <PropertyRef Name="MaBen" />
+    </Key>
+    <Property Name="MaBen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenBen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tuyens" Relationship="Self.FK__Tuyen__BenCuoi__3A81B327" FromRole="BenXe" ToRole="Tuyen" />
+    <NavigationProperty Name="Tuyens1" Relationship="Self.FK__Tuyen__BenDau__398D8EEE" FromRole="BenXe" ToRole="Tuyen" />
+  </EntityType>
+  <EntityType Name="Chuyen">
+    <Key>
+      <PropertyRef Name="MaChuyen" />
+    </Key>
+    <Property Name="MaChuyen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaLichChay" Type="Int32" Nullable="false" />
+    <Property Name="Ngay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SoGheTrong" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LichChay" Relationship="Self.FK__Chuyen__MaLichCh__45F365D3" FromRole="Chuyen" ToRole="LichChay" />
+    <NavigationProperty Name="Ves" Relationship="Self.FK__Ve__MaChuyen__4CA06362" FromRole="Chuyen" ToRole="Ve" />
+    <Property Name="GiaVe" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Ves" Relationship="Self.FK__Ve__MaKH__4D94879B" FromRole="KhachHang" ToRole="Ve" />
+  </EntityType>
+  <EntityType Name="LichChay">
+    <Key>
+      <PropertyRef Name="MaLichChay" />
+    </Key>
+    <Property Name="MaLichChay" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTuyen" Type="Int32" Nullable="false" />
+    <Property Name="MaXe" Type="Int32" Nullable="false" />
+    <Property Name="MaTaiXe" Type="Int32" Nullable="false" />
+    <Property Name="GioKhoiHanh" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="GioDen" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Chuyens" Relationship="Self.FK__Chuyen__MaLichCh__45F365D3" FromRole="LichChay" ToRole="Chuyen" />
+    <NavigationProperty Name="TaiXe" Relationship="Self.FK__LichChay__MaTaiX__4316F928" FromRole="LichChay" ToRole="TaiXe" />
+    <NavigationProperty Name="Tuyen" Relationship="Self.FK__LichChay__MaTuye__412EB0B6" FromRole="LichChay" ToRole="Tuyen" />
+    <NavigationProperty Name="Xe" Relationship="Self.FK__LichChay__MaXe__4222D4EF" FromRole="LichChay" ToRole="Xe" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="MaTK" />
+    </Key>
+    <Property Name="MaTK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDangNhap" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="NgayTao" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TaiXe">
+    <Key>
+      <PropertyRef Name="MaTaiXe" />
+    </Key>
+    <Property Name="MaTaiXe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BangLai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LichChays" Relationship="Self.FK__LichChay__MaTaiX__4316F928" FromRole="TaiXe" ToRole="LichChay" />
+  </EntityType>
+  <EntityType Name="ThanhToan">
+    <Key>
+      <PropertyRef Name="MaTT" />
+    </Key>
+    <Property Name="MaTT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaVe" Type="Int32" Nullable="false" />
+    <Property Name="SoTien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PhuongThuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ThoiGianThanhToan" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Ve" Relationship="Self.FK__ThanhToan__MaVe__5165187F" FromRole="ThanhToan" ToRole="Ve" />
+  </EntityType>
+  <EntityType Name="Tuyen">
+    <Key>
+      <PropertyRef Name="MaTuyen" />
+    </Key>
+    <Property Name="MaTuyen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTuyen" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BenDau" Type="Int32" Nullable="false" />
+    <Property Name="BenCuoi" Type="Int32" Nullable="false" />
+    <Property Name="QuangDuongKm" Type="Int32" />
+    <NavigationProperty Name="BenXe" Relationship="Self.FK__Tuyen__BenCuoi__3A81B327" FromRole="Tuyen" ToRole="BenXe" />
+    <NavigationProperty Name="BenXe1" Relationship="Self.FK__Tuyen__BenDau__398D8EEE" FromRole="Tuyen" ToRole="BenXe" />
+    <NavigationProperty Name="LichChays" Relationship="Self.FK__LichChay__MaTuye__412EB0B6" FromRole="Tuyen" ToRole="LichChay" />
+  </EntityType>
+  <EntityType Name="Ve">
+    <Key>
+      <PropertyRef Name="MaVe" />
+    </Key>
+    <Property Name="MaVe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaChuyen" Type="Int32" Nullable="false" />
+    <Property Name="SoGhe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaKH" Type="Int32" Nullable="false" />
+    <Property Name="Gia" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ThoiGianDat" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Chuyen" Relationship="Self.FK__Ve__MaChuyen__4CA06362" FromRole="Ve" ToRole="Chuyen" />
+    <NavigationProperty Name="KhachHang" Relationship="Self.FK__Ve__MaKH__4D94879B" FromRole="Ve" ToRole="KhachHang" />
+    <NavigationProperty Name="ThanhToans" Relationship="Self.FK__ThanhToan__MaVe__5165187F" FromRole="Ve" ToRole="ThanhToan" />
+  </EntityType>
+  <EntityType Name="Xe">
+    <Key>
+      <PropertyRef Name="MaXe" />
+    </Key>
+    <Property Name="MaXe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BienSo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoCho" Type="Int32" Nullable="false" />
+    <Property Name="LoaiXe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LichChays" Relationship="Self.FK__LichChay__MaXe__4222D4EF" FromRole="Xe" ToRole="LichChay" />
+  </EntityType>
+  <Association Name="FK__Tuyen__BenCuoi__3A81B327">
+    <End Role="BenXe" Type="Self.BenXe" Multiplicity="1" />
+    <End Role="Tuyen" Type="Self.Tuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BenXe">
+        <PropertyRef Name="MaBen" />
+      </Principal>
+      <Dependent Role="Tuyen">
+        <PropertyRef Name="BenCuoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tuyen__BenDau__398D8EEE">
+    <End Role="BenXe" Type="Self.BenXe" Multiplicity="1" />
+    <End Role="Tuyen" Type="Self.Tuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BenXe">
+        <PropertyRef Name="MaBen" />
+      </Principal>
+      <Dependent Role="Tuyen">
+        <PropertyRef Name="BenDau" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Chuyen__MaLichCh__45F365D3">
+    <End Role="LichChay" Type="Self.LichChay" Multiplicity="1" />
+    <End Role="Chuyen" Type="Self.Chuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LichChay">
+        <PropertyRef Name="MaLichChay" />
+      </Principal>
+      <Dependent Role="Chuyen">
+        <PropertyRef Name="MaLichChay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ve__MaChuyen__4CA06362">
+    <End Role="Chuyen" Type="Self.Chuyen" Multiplicity="1" />
+    <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chuyen">
+        <PropertyRef Name="MaChuyen" />
+      </Principal>
+      <Dependent Role="Ve">
+        <PropertyRef Name="MaChuyen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ve__MaKH__4D94879B">
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
+    <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="Ve">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LichChay__MaTaiX__4316F928">
+    <End Role="TaiXe" Type="Self.TaiXe" Multiplicity="1" />
+    <End Role="LichChay" Type="Self.LichChay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaiXe">
+        <PropertyRef Name="MaTaiXe" />
+      </Principal>
+      <Dependent Role="LichChay">
+        <PropertyRef Name="MaTaiXe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LichChay__MaTuye__412EB0B6">
+    <End Role="Tuyen" Type="Self.Tuyen" Multiplicity="1" />
+    <End Role="LichChay" Type="Self.LichChay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tuyen">
+        <PropertyRef Name="MaTuyen" />
+      </Principal>
+      <Dependent Role="LichChay">
+        <PropertyRef Name="MaTuyen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LichChay__MaXe__4222D4EF">
+    <End Role="Xe" Type="Self.Xe" Multiplicity="1" />
+    <End Role="LichChay" Type="Self.LichChay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Xe">
+        <PropertyRef Name="MaXe" />
+      </Principal>
+      <Dependent Role="LichChay">
+        <PropertyRef Name="MaXe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThanhToan__MaVe__5165187F">
+    <End Role="Ve" Type="Self.Ve" Multiplicity="1" />
+    <End Role="ThanhToan" Type="Self.ThanhToan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ve">
+        <PropertyRef Name="MaVe" />
+      </Principal>
+      <Dependent Role="ThanhToan">
+        <PropertyRef Name="MaVe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLXeBusPhuongTrang_65134257Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BenXes" EntityType="Self.BenXe" />
+    <EntitySet Name="Chuyens" EntityType="Self.Chuyen" />
+    <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
+    <EntitySet Name="LichChays" EntityType="Self.LichChay" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+    <EntitySet Name="TaiXes" EntityType="Self.TaiXe" />
+    <EntitySet Name="ThanhToans" EntityType="Self.ThanhToan" />
+    <EntitySet Name="Tuyens" EntityType="Self.Tuyen" />
+    <EntitySet Name="Ves" EntityType="Self.Ve" />
+    <EntitySet Name="Xes" EntityType="Self.Xe" />
+    <AssociationSet Name="FK__Tuyen__BenCuoi__3A81B327" Association="Self.FK__Tuyen__BenCuoi__3A81B327">
+      <End Role="BenXe" EntitySet="BenXes" />
+      <End Role="Tuyen" EntitySet="Tuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tuyen__BenDau__398D8EEE" Association="Self.FK__Tuyen__BenDau__398D8EEE">
+      <End Role="BenXe" EntitySet="BenXes" />
+      <End Role="Tuyen" EntitySet="Tuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Chuyen__MaLichCh__45F365D3" Association="Self.FK__Chuyen__MaLichCh__45F365D3">
+      <End Role="LichChay" EntitySet="LichChays" />
+      <End Role="Chuyen" EntitySet="Chuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ve__MaChuyen__4CA06362" Association="Self.FK__Ve__MaChuyen__4CA06362">
+      <End Role="Chuyen" EntitySet="Chuyens" />
+      <End Role="Ve" EntitySet="Ves" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ve__MaKH__4D94879B" Association="Self.FK__Ve__MaKH__4D94879B">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="Ve" EntitySet="Ves" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LichChay__MaTaiX__4316F928" Association="Self.FK__LichChay__MaTaiX__4316F928">
+      <End Role="TaiXe" EntitySet="TaiXes" />
+      <End Role="LichChay" EntitySet="LichChays" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LichChay__MaTuye__412EB0B6" Association="Self.FK__LichChay__MaTuye__412EB0B6">
+      <End Role="Tuyen" EntitySet="Tuyens" />
+      <End Role="LichChay" EntitySet="LichChays" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LichChay__MaXe__4222D4EF" Association="Self.FK__LichChay__MaXe__4222D4EF">
+      <End Role="Xe" EntitySet="Xes" />
+      <End Role="LichChay" EntitySet="LichChays" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThanhToan__MaVe__5165187F" Association="Self.FK__ThanhToan__MaVe__5165187F">
+      <End Role="Ve" EntitySet="Ves" />
+      <End Role="ThanhToan" EntitySet="ThanhToans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,198 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+        /* CSS Tùy chỉnh cho Layout Hướng dẫn */
+        .process-section {
+            background-color: #f9fbfd;
+            padding: 60px 0;
+        }
+
+        .step-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            height: 100%;
+            border-bottom: 4px solid transparent;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            border-bottom-color: #ff6600; /* Màu cam chủ đạo FUTA style */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: #fff4e6; /* Màu nền icon nhạt */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #ff6600; /* Màu icon */
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: #ff6600;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Căn trái list text cho dễ đọc */
+            padding-left: 10px;
+        }
+
+        .step-desc li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .step-desc li::before {
+            content: "•";
+            color: #ff6600;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Đường nối giữa các bước (chỉ hiện trên màn hình lớn) */
+        media (min-width: 992px) {
+            .step-item::after {
+                content: '';
+                position: absolute;
+                top: 70px; /* Canh chỉnh theo chiều cao icon */
+                right: -50%;
+                width: 100%;
+                height: 2px;
+                background-color: #e9ecef;
+                z-index: 1;
+            }
+
+            /* Ẩn đường nối ở phần tử cuối cùng */
+            .step-item:last-child::after {
+                display: none;
+            }
+        }
+</style>
+<body>
+
+    <section class="process-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase text-warning fw-bold ls-2">Hướng dẫn đặt vé</h6>
+                <h2 class="fw-bold display-6">4 Bước Đặt Vé Đơn Giản</h2>
+                <p class="text-muted w-75 mx-auto">Quy trình đặt vé nhanh chóng và tiện lợi. Vui lòng thực hiện theo các bước dưới đây.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6 step-item">
+                    <div class="step-card">
+                        <div class="icon-box">
+                            <i class="fas fa-bus"></i>
+                            <span class="step-number">1</span>
+                        </div>
+                        <h4 class="step-title">Tìm Chuyến Xe</h4>
+                        <ul class="step-desc">
+                            <li>Vào trang <b>Lịch Trình</b>.</li>
+                            <li>Xem lịch chạy và chọn chuyến đi phù hợp.</li>
+                            <li>Chọn loại xe bạn muốn.</li>
+                            <li>Nhấn nút <b>"Đặt Vé"</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 step-item">
+                    <div class="step-card">
+                        <div class="icon-box">
+                            <i class="fas fa-chair"></i>
+                            <span class="step-number">2</span>
+                        </div>
+                        <h4 class="step-title">Chọn Ghế Ngồi</h4>
+                        <ul class="step-desc">
+                            <li>Sơ đồ ghế sẽ hiện ra.</li>
+                            <li>Chọn các ghế còn trống (màu xanh).</li>
+                            <li>Hệ thống sẽ tạm tính tổng tiền vé.</li>
+                            <li>Nhấn <b>"Tiếp tục"</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 step-item">
+                    <div class="step-card">
+                        <div class="icon-box">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span class="step-number">3</span>
+                        </div>
+                        <h4 class="step-title">Thanh Toán</h4>
+                        <ul class="step-desc">
+                            <li>Kiểm tra lại thông tin vé.</li>
+                            <li>Chọn <b>Xác nhận thanh toán</b>.</li>
+                            <li>Thực hiện <b>Chuyển khoản</b> theo thông tin hiển thị trên màn hình.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 step-item">
+                    <div class="step-card">
+                        <div class="icon-box">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="step-number">4</span>
+                        </div>
+                        <h4 class="step-title">Hoàn Tất</h4>
+                        <ul class="step-desc">
+                            <li>Sau khi chuyển khoản, hệ thống sẽ ghi nhận.</li>
+                            <li>Vui lòng chờ <b>Admin xác nhận</b> giao dịch.</li>
+                            <li>Vé điện tử sẽ được cập nhật trong mục <b>"Lịch sử vé"</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="@Url.Action("Index", "Tuyen_65134257")" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow">
+                    <i class="fas fa-ticket-alt me-2"></i> Đặt Vé Ngay
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+

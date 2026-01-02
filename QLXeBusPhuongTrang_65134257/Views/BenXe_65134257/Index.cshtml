@@ -1,0 +1,78 @@
+﻿@model IEnumerable<QLXeBusPhuongTrang_65134257.Models.BenXe>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container py-5">
+    <div class="card shadow-lg border-0">
+
+        @* HEADER THEO YÊU CẦU: Nền trắng, Chữ xanh lá cây *@
+        <div class="card-header bg-white py-3 rounded-top-4 border-bottom">
+            <h4 class="mb-0 fw-bold text-center text-success">
+                <i class="fas fa-bus-alt me-2"></i> DANH SÁCH BẾN XE
+            </h4>
+        </div>
+
+        <div class="card-body p-4">
+
+            @* NÚT THÊM MỚI (CREATE NEW) *@
+            <div class="mb-4 d-flex justify-content-between align-items-center">
+                <h5 class="card-title text-secondary">Quản lý các điểm xuất phát và kết thúc</h5>
+                @Html.ActionLink("➕ Thêm Bến Xe Mới", "Create", null, new { @class = "btn btn-success fw-bold shadow-sm" })
+            </div>
+
+            @* BẢNG HIỂN THỊ DỮ LIỆU *@
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            @* THAY THẾ DisplayNameFor BẰNG TÊN TIẾNG VIỆT CÓ DẤU *@
+                            <th>
+                                Tên Bến Xe
+                            </th>
+                            <th>
+                                Địa Chỉ
+                            </th>
+                            <th class="text-center" style="width: 200px;">
+                                Thao tác
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-bold">
+                                    @Html.DisplayFor(modelItem => item.TenBen)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DiaChi)
+                                </td>
+                                <td class="text-center">
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaBen }, new { @class = "btn btn-sm btn-primary me-2" })
+                                    <form action="@Url.Action("Delete", "BenXe_65134257", new { id = item.MaBen })" method="post" style="display:inline;">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                title="Xóa Bến Xe"
+                                                onclick="return confirm('Bạn có chắc chắn muốn xóa bến xe này không?');">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @* Kiểm tra nếu danh sách rỗng *@
+            @if (!Model.Any())
+            {
+                <div class="alert alert-warning text-center" role="alert">
+                    <i class="fas fa-exclamation-triangle me-2"></i> Hiện không có bến xe nào trong hệ thống.
+                </div>
+            }
+        </div>
+    </div>
+</div>

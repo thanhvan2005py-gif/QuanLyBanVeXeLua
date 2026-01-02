@@ -1,0 +1,83 @@
+﻿@model IEnumerable<QLXeBusPhuongTrang_65134257.Models.KhachHang>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center my-4">
+        <h2 class="fw-bold" style="color: #ff6b00;">
+            <i class="fas fa-users me-2"></i> QUẢN LÝ KHÁCH HÀNG
+        </h2>
+    </div>
+
+    <div class="card shadow border-0 mb-4">
+        <div class="card-header bg-white py-3 border-bottom-warning">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5 class="m-0 font-weight-bold text-secondary">Danh sách tài khoản</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped align-middle mb-0">
+                    <thead class="bg-light text-dark">
+                        <tr>
+                            <th class="py-3 ps-4">Họ và Tên</th>
+                            <th class="py-3">Số Điện Thoại</th>
+                            <th class="py-3">Email</th>
+                            <th class="py-3 text-center">Mật Khẩu</th>
+                            <th class="py-3 text-center" style="width: 150px;">Chức Năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="ps-4 fw-bold text-primary">
+                                        @Html.DisplayFor(modelItem => item.TenKH)
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-light text-dark border">
+                                            <i class="fas fa-phone-alt text-secondary me-1"></i> @item.DienThoai
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="mailto:@item.Email" class="text-decoration-none text-dark">
+                                            <i class="far fa-envelope text-muted me-1"></i> @item.Email
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-muted">
+                                        <i class="fas fa-key me-1"></i> ******
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="btn-group" role="group">
+                                            <a href="@Url.Action("Edit", new { id = item.MaKH })" class="btn btn-sm btn-outline-warning" title="Sửa">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="@Url.Action("Delete", new { id = item.MaKH })" class="btn btn-sm btn-outline-danger" title="Xóa">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center py-4 text-muted">
+                                    <i class="fas fa-folder-open fa-2x mb-2"></i><br />
+                                    Không có dữ liệu khách hàng nào.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

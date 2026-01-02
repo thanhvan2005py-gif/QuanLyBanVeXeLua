@@ -1,0 +1,99 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.Chuyen
+
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-gradient-success text-white text-center py-3 rounded-top-4" style="background: linear-gradient(45deg, #28a745, #1e7e34);">
+                    <h4 class="mb-0 fw-bold"><i class="fas fa-bus-alt me-2"></i> TẠO CHUYẾN XE MỚI</h4>
+                </div>
+
+                <div class="card-body p-4 p-md-5">
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.ValidationSummary(true, "", new { @class = "alert alert-danger mb-4" })
+
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(model => model.MaLichChay, "Mã Lịch Chạy", htmlAttributes: new { @class = "form-label fw-bold text-secondary" })
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-hashtag text-primary"></i></span>
+
+                                @Html.EditorFor(model => model.MaLichChay, new { htmlAttributes = new { @class = "form-control rounded-3", @type = "number", placeholder = "Nhập Mã Lịch Chạy (ID)" } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.MaLichChay, "", new { @class = "text-danger small mt-1" })
+                        </div>
+
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(model => model.Ngay, "Ngày Khởi Hành", htmlAttributes: new { @class = "form-label fw-bold text-secondary" })
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-calendar-day text-danger"></i></span>
+
+                                @Html.EditorFor(model => model.Ngay, new { htmlAttributes = new { @class = "form-control rounded-3", type = "date" } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Ngay, "", new { @class = "text-danger small mt-1" })
+                        </div>
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(model => model.GiaVe, "Giá Vé (VNĐ)", htmlAttributes: new { @class = "form-label fw-bold text-secondary" })
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fas fa-money-bill-wave text-success"></i></span>
+
+                                @Html.EditorFor(model => model.GiaVe, new
+                                {
+                                    htmlAttributes = new
+                                    {
+                                        @class = "form-control",
+                                        @type = "number",
+                                        @min = "0",
+                                        @step = "1000",
+                                        @placeholder = "Ví dụ: 200000"
+                                    }
+                                })
+
+                                <span class="input-group-text bg-light fw-bold text-muted">VNĐ</span>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.GiaVe, "", new { @class = "text-danger small mt-1" })
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" value="Create" class="btn btn-success px-5 py-2 rounded-pill shadow-sm">
+                                <i class="fas fa-check-circle me-2"></i> Tạo Chuyến
+                            </button>
+                        </div>
+                    }
+                </div>
+
+                <div class="card-footer text-center bg-light py-3 rounded-bottom-4">
+                    @Html.ActionLink("← Quay lại Danh sách", "Index", null, new { @class = "text-decoration-none fw-bold text-secondary" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <style>
+        /* CSS Tùy chỉnh để input group trông đẹp hơn */
+        .form-control:focus, .form-select:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.15);
+        }
+
+        .input-group-text {
+            background-color: #f8f9fa;
+        }
+
+        .card-header {
+            border-radius: 18px 18px 0 0 !important;
+        }
+    </style>
+}

@@ -1,0 +1,1110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|d:\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\qlxebusphuongtrang_65134257\\qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\xacnhanthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\xacnhanthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\thanhtoan_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\thanhtoan_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\modelqlxebusphuongtrang_65134257.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\modelqlxebusphuongtrang_65134257.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\ve_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\ve_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\chonghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\chonghe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\chuyen_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\chuyen_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\account_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\account_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\tuyen_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\tuyen_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\xe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\xe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\viewmodels\\vehienthiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\viewmodels\\vehienthiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\shared\\_layoutkhach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\shared\\_layoutkhach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\khachhang_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\khachhang_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\thanhtoan_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\khachhang_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\account_65134257\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\account_65134257\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\account_65134257\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\account_65134257\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\lichchay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\lichchay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\taixe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\taixe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\chuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\chuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\xe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\xe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\huongdandatve_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\huongdandatve_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\huongdandatve_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\huongdandatve_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\benxe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\benxe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\benxe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\benxe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\benxe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\benxe_65134257\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\benxe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\benxe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\benxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\benxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\taixe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\taixe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\taixe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\taixe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\xe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\xe_65134257\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\xe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\xe_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\xe_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\xe_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\taixe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\taixe_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\ve_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\ve_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\chuyen_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\lichchay_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\lichchay_65134257controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\lichchay_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\views\\tuyen_65134257\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\viewmodels\\ghetrangthaivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\viewmodels\\ghetrangthaivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\qlxebusphuongtrang_65134257\\models\\viewmodels\\thanhtoanhienthiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB92E456-B5EA-407F-A4DB-FA1110595851}|QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257.csproj|solutionrelative:qlxebusphuongtrang_65134257\\models\\viewmodels\\thanhtoanhienthiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T09:23:58.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-23T08:11:52.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwHsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T14:09:24.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Index.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGIAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T09:19:14.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T06:53:14.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XacNhanThanhToan.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\XacNhanThanhToan.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\XacNhanThanhToan.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\XacNhanThanhToan.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\XacNhanThanhToan.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAGEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:35:40.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\KhachHang.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\KhachHang.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\KhachHang.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\KhachHang.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:52:44.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ve_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Ve_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\Ve_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Ve_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\Ve_65134257Controller.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAiwGsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T08:26:04.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThanhToan_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\ThanhToan_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\ThanhToan_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\ThanhToan_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\ThanhToan_65134257Controller.cs",
+              "ViewState": "AgIAACIBAAAAAAAAAAAowCQBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:13:50.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:38:08.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-23T08:26:02.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChonGhe.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\ChonGhe.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\ChonGhe.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\ChonGhe.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\ChonGhe.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAN4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:19:14.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Chuyen_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Chuyen_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\Chuyen_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Chuyen_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\Chuyen_65134257Controller.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAwwJ4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T08:13:07.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelQLXeBusPhuongTrang_65134257.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ModelQLXeBusPhuongTrang_65134257.edmx",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\ModelQLXeBusPhuongTrang_65134257.edmx",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ModelQLXeBusPhuongTrang_65134257.edmx [Diagram1]",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\ModelQLXeBusPhuongTrang_65134257.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-15T06:29:54.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Account_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Account_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\Account_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Account_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\Account_65134257Controller.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T07:50:39.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Index.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T10:20:29.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tuyen_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Tuyen_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\Tuyen_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Tuyen_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\Tuyen_65134257Controller.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAowKEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T06:53:09.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:52:03.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T12:54:44.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Xe_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Xe_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\Xe_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\Xe_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\Xe_65134257Controller.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:48:37.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "VeHienThiViewModel.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\VeHienThiViewModel.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\VeHienThiViewModel.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\VeHienThiViewModel.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\VeHienThiViewModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T08:15:24.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Details.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDYAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T11:01:41.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwD0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T12:33:28.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_LayoutKhach.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutKhach.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutKhach.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutKhach.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutKhach.cshtml",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAQwNoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T12:42:51.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "KhachHang_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\KhachHang_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\KhachHang_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\KhachHang_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\KhachHang_65134257Controller.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:13:50.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:58:32.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\ThanhToan_65134257\\Details.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T01:23:46.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T06:30:55.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Delete.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Delete.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T11:01:36.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T11:01:37.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\KhachHang_65134257\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T12:25:01.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DangKy.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangKy.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangKy.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangKy.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangKy.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T07:58:46.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangNhap.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangNhap.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Account_65134257\\DangNhap.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T07:51:37.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LichChay.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\LichChay.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\LichChay.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\LichChay.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\LichChay.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:20:28.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Delete.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Delete.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T09:23:32.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:45:30.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Create.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAQwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:21:21.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:29:57.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Chuyen.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\Chuyen.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\Chuyen.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\Chuyen.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\Chuyen.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T06:52:00.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Ve.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\Ve.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\Ve.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\Ve.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\Ve.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T06:24:54.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:49:05.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:17:56.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\HuongDanDatVe_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\HuongDanDatVe_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\HuongDanDatVe_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\HuongDanDatVe_65134257\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T02:33:33.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "HuongDanDatVe_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\HuongDanDatVe_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\HuongDanDatVe_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\HuongDanDatVe_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\HuongDanDatVe_65134257Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T02:33:18.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Index.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Index.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T13:08:13.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BenXe_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\BenXe_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\BenXe_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\BenXe_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\BenXe_65134257Controller.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAowIoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:08:01.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Create.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T13:15:51.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\BenXe_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T13:14:38.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "BenXe.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\BenXe.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\BenXe.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\BenXe.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\BenXe.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:10:51.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:47:03.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Edit.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Edit.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Edit.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:49:20.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:50:03.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\TaiXe_65134257\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:47:30.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Xe_65134257\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T12:55:50.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TaiXe_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\TaiXe_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\TaiXe_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\TaiXe_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\TaiXe_65134257Controller.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAowIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:43:14.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T14:45:27.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Delete.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Delete.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Ve_65134257\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T14:45:26.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:29:54.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Delete.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Delete.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Chuyen_65134257\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:29:53.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T12:42:28.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "LichChay_65134257Controller.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\LichChay_65134257Controller.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\LichChay_65134257Controller.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\LichChay_65134257Controller.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\LichChay_65134257Controller.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:21:28.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\LichChay_65134257\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T09:23:09.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T07:35:04.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Details.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Details.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:18:21.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Delete.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Delete.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:18:48.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Create.cshtml",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Create.cshtml",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Views\\Tuyen_65134257\\Create.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAQwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T08:18:40.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "GheTrangThaiVM.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\GheTrangThaiVM.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\GheTrangThaiVM.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\GheTrangThaiVM.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\GheTrangThaiVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T08:14:31.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ThanhToanHienThiViewModel.cs",
+              "DocumentMoniker": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\ThanhToanHienThiViewModel.cs",
+              "RelativeDocumentMoniker": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\ThanhToanHienThiViewModel.cs",
+              "ToolTip": "D:\\PH\u00C1T TRI\u1EC2N \u1EE8NG D\u1EE4NG WEB\\QLXeBusPhuongTrang_65134257\\QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\ThanhToanHienThiViewModel.cs",
+              "RelativeToolTip": "QLXeBusPhuongTrang_65134257\\Models\\ViewModels\\ThanhToanHienThiViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T08:14:51.968Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

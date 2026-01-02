@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "DangNhap";
+}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-center py-3" style="background-color: #ffffff; border-bottom: 2px solid #ff6b00;">
+                    <h4 class="mb-0 fw-bold" style="color: #ff6b00;">
+                        <i class="fas fa-sign-in-alt me-2"></i> ĐĂNG NHẬP
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+                    }
+                    @if (ViewBag.LoiDangNhap != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.LoiDangNhap</div>
+                    }
+
+                    @using (Html.BeginForm("DangNhap", "Account_65134257", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Tài khoản:</label>
+                            <input type="text" name="ThongTinDangNhap" class="form-control form-control-lg" required placeholder="Nhập SĐT nếu là khách hàng" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Mật khẩu:</label>
+                            <input type="password" name="MatKhau" class="form-control form-control-lg" required placeholder="Nhập mật khẩu" />
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-lg fw-bold text-white" style="background-color: #ff6b00; border-color: #ff6b00;">
+                                ĐĂNG NHẬP
+                            </button>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer text-center bg-light">
+                    Chưa có tài khoản? <a href="@Url.Action("DangKy", "Account_65134257")" class="text-warning fw-bold">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

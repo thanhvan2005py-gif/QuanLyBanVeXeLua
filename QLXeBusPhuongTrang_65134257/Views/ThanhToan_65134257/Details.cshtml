@@ -1,0 +1,88 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.ViewModels.ThanhToanHienThiViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="card-title mb-0">Chi Tiết Hóa Đơn</h2>
+                </div>
+                <div class="card-body">
+                    <h4 class="mb-3">Thông Tin Chi Tiết Giao Dịch</h4>
+                    <hr />
+
+                    <dl class="row">
+                        @* Cột Tổng Tiền (Giống Index) *@
+                        <dt class="col-sm-4">
+                            Tổng Tiền
+                        </dt>
+                        <dd class="col-sm-8">
+                            <span class="text-danger font-weight-bold">
+                                @string.Format("{0:N0} VNĐ", Model.SoTien)
+                            </span>
+                        </dd>
+
+                        @* Cột Phương Thức Thanh Toán (Giống Index) *@
+                        <dt class="col-sm-4">
+                            Phương Thức TT
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.PhuongThuc)
+                        </dd>
+
+                        @* Cột Thời Gian Thanh Toán (Giống Index) *@
+                        <dt class="col-sm-4">
+                            Thời Gian
+                        </dt>
+                        <dd class="col-sm-8">
+                            @* ThoiGianThanhToan trong ViewModel là DateTime? nên dùng HasValue là an toàn nhất *@
+                            @(Model.ThoiGianThanhToan.HasValue ? Model.ThoiGianThanhToan.Value.ToString("dd/MM/yyyy HH:mm:") : "N/A")
+                        </dd>
+
+                        @* Cột Trạng Thái (Giống Index) *@
+                        <dt class="col-sm-4">
+                            Trạng Thái
+                        </dt>
+                        <dd class="col-sm-8">
+                            @{
+                                string status = Model.TrangThai;
+                                string badgeClass = "badge bg-secondary";
+
+                                if (status == "Đã thanh toán") { badgeClass = "badge bg-success"; }
+                                else if (status == "Chờ xử lý") { badgeClass = "badge bg-warning text-dark"; }
+                                else if (status == "Thất bại") { badgeClass = "badge bg-danger"; }
+                            }
+                            <span class="@badgeClass p-2">@status</span>
+                        </dd>
+
+                        @* Cột Ghế Đã Thanh Toán (Sử dụng DanhSachGhe đã gộp) *@
+                        <dt class="col-sm-4 mt-3">
+                            Ghế Đã TT
+                        </dt>
+                        <dd class="col-sm-8 mt-3">
+                            <span class="font-weight-bold text-primary fs-5">
+                                @Html.DisplayFor(model => model.DanhSachGhe)
+                            </span>
+                        </dd>
+                        <dt class="col-sm-4 mt-3">
+                            Thông tin Xe
+                        </dt>
+                        <dd class="col-sm-8 mt-3">
+                            <span class="font-weight-bold text-info">
+                                @Model.LoaiXe , @Model.BienSo (@Model.SoCho chỗ)
+                            </span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <div>
+                        @Html.ActionLink("⬅️ Quay lại Danh sách", "Index", null, new { @class = "btn btn-outline-secondary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

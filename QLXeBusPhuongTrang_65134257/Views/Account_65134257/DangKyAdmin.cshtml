@@ -1,0 +1,159 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.TaiKhoan
+@{
+    ViewBag.Title = "DangKyAdmin";
+}
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header text-center py-3" style="background-color: #ffffff; border-bottom: 2px solid #ff6b00;">
+                    <h4 class="mb-0 fw-bold" style="color: #ff6b00;">
+                        <i class="fas fa-sign-in-alt me-2"></i> Đăng Ký Admin
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Họ và Tên</label>
+                            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nhập họ và tên...", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Số điện thoại</label>
+                            @Html.EditorFor(model => model.DienThoai, new
+                       {
+                           htmlAttributes = new
+                           {
+                               @class = "form-control",
+                               @placeholder = "Nhập số điện thoại...",
+                               @required = "required",
+                               // 1. Giới hạn đúng 10 ký tự
+                               @maxlength = "10",
+                               @minlength = "10",
+                               // 2. Chặn không cho nhập chữ (chỉ nhận 0-9), nhập chữ sẽ tự động bị xóa ngay
+                               @oninput = "this.value = this.value.replace(/[^0-9]/g, '')",
+                               // 3. Pattern để hiển thị thông báo lỗi nếu trình duyệt check form
+                               @pattern = "[0-9]{10}"
+                           }
+                       })
+                            @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger" })
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Tên đăng nhập</label>
+                            @Html.EditorFor(model => model.TenDangNhap, new
+                       {
+                           htmlAttributes = new
+                           {
+                               @class = "form-control",
+                               @required = "required",
+
+                               // 1. Độ dài: Tối thiểu 5, tối đa 20
+                               @minlength = "5",
+                               @maxlength = "20",
+
+                               // 2. Xử lý JS: Cấm nhập dấu cách và ký tự đặc biệt (chỉ cho chữ, số, _, .)
+                               // Nếu gõ dấu cách hoặc @, #, Tiếng Việt... nó sẽ tự xóa ngay
+                               @oninput = "this.value = this.value.replace(/[^a-zA-Z0-9_.]/g, '')",
+
+                               // 3. Pattern để hiển thị lỗi popup của trình duyệt
+                               @pattern = "[a-zA-Z0-9_.]{5,20}",
+                               @title = "Tên đăng nhập 5-20 ký tự. Chỉ được dùng chữ không dấu, số."
+                           }
+                       })
+
+                            @Html.ValidationMessageFor(model => model.TenDangNhap, "", new { @class = "text-danger" })
+
+                        <small class="text-muted" style="font-size: 0.85rem;">
+                            * Yêu cầu: Nhập tiếng việt không dấu
+                        </small>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Mật khẩu</label>
+
+                            <div class="input-group">
+                                @Html.EditorFor(model => model.MatKhau, new
+                           {
+                               htmlAttributes = new
+                               {
+                                   @class = "form-control",
+                                   @type = "password",
+                                   @placeholder = "Nhập mật khẩu...",
+                                   @required = "required",
+                                   @id = "txtMatKhau", // Đặt ID để xử lý JS
+
+                                   // 1. Độ dài tối thiểu 6 ký tự
+                                   @minlength = "6",
+
+                                   // 2. Ràng buộc: Ít nhất 1 số, 1 chữ thường, 1 chữ hoa
+                                   @pattern = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}",
+
+                                   // 3. Thông báo lỗi hiển thị nếu nhập sai pattern
+                                   @title = "Mật khẩu phải có ít nhất 6 ký tự, bao gồm ít nhất 1 chữ hoa, 1 chữ thường và 1 số."
+                               }
+                           })
+
+                                
+                            </div>
+
+                            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                            <small class="text-muted" style="font-size: 0.85rem;">
+                                * Yêu cầu: Tối thiểu 6 ký tự, có chữ hoa, chữ thường và số.
+                            </small>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-warning btn-lg fw-bold futa-btn-custom">HOÀN TẤT ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    }
+
+                </div>
+                <div class="card-footer text-center bg-light">
+                    Đã có tài khoản? <a href="@Url.Action("DangNhap")" class="text-primary fw-bold">Đăng nhập ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+
+    .futa-btn-custom {
+        background-color: #ef5222; /* Mã màu cam đặc trưng của Phương Trang */
+        color: #ffffff !important; /* Chữ trắng (dùng !important để đè Bootstrap nếu cần) */
+        border: 1px solid #ef5222;
+        transition: all 0.3s ease;
+    }
+
+        /* Hiệu ứng khi di chuột vào (đậm hơn chút) */
+        .futa-btn-custom:hover {
+            background-color: #d94012;
+            border-color: #d94012;
+            color: #ffffff !important;
+        }
+</style>
+<script>
+    function togglePassword() {
+        var x = document.getElementById("txtMatKhau");
+        var icon = document.getElementById("iconEye");
+        if (x.type === "password") {
+            x.type = "text";
+            icon.className = "fa fa-eye-slash"; // Nếu bạn dùng FontAwesome
+            event.target.innerText = " Ẩn";
+        } else {
+            x.type = "password";
+            icon.className = "fa fa-eye";
+            event.target.innerText = " Hiện";
+        }
+    }
+</script>

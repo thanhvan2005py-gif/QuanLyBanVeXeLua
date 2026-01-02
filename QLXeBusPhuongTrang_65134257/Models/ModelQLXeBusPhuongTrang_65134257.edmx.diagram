@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75416590f1294ffd8bdbe97f8c65bac6" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.BenXe" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.Chuyen" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.KhachHang" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.LichChay" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.TaiKhoan" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.TaiXe" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.ThanhToan" Width="1.5" PointX="12" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.Tuyen" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.Ve" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLXeBusPhuongTrang_65134257Model.Xe" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__Tuyen__BenCuoi__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__Tuyen__BenDau__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__Chuyen__MaLichCh__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__Ve__MaChuyen__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__Ve__MaKH__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__LichChay__MaTaiX__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__LichChay__MaTuye__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__LichChay__MaXe__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="QLXeBusPhuongTrang_65134257Model.FK__ThanhToan__MaVe__5165187F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

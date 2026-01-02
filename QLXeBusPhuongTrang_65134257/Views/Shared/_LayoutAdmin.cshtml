@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="futa-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="@Url.Action("Index", "Tuyen_65134257")" title="Về trang chủ">
+                    <img src="~/Images/futa_logo.png" alt="Logo Phương Trang" style="height: 120px;">
+                </a>
+            </div>
+
+            <h3 class="header-title">QUẢN LÝ XE BUS PHƯƠNG TRANG</h3>
+        </div>
+    </header>
+    <nav class="futa-nav-bar border-bottom border-2 mb-2 position-relative">
+        <div class="container d-flex justify-content-center align-items-center position-relative">
+
+            <ul class="d-flex p-0 align-items-center menu-list mb-0">
+                <li class="nav-item"><a href="@Url.Action("Index","Tuyen_65134257")"><i class="fas fa-route me-2"></i>LỊCH TRÌNH</a></li>
+                <span class="separator">|</span>
+                <li class="nav-item"><a href="@Url.Action("Index","Ve_65134257")"><i class="fas fa-ticket-alt me-2"></i>TRA CỨU VÉ</a></li>
+                <span class="separator">|</span>
+                <li class="nav-item"><a href="@Url.Action("Index","ThanhToan_65134257")"><i class="fas fa-file-invoice-dollar me-2"></i>HÓA ĐƠN</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="internalManagementDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        QUẢN LÝ NỘI BỘ
+                    </a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="internalManagementDropdown">
+                        <li><a class="dropdown-item" href="@Url.Action("Index","LichChay_65134257")"><i class="fas fa-calendar-alt me-2 text-primary"></i> Lịch Chạy</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Index","Xe_65134257")"><i class="fas fa-bus me-2 text-success"></i> Xe</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Index","TaiXe_65134257")"><i class="fas fa-user-tie me-2 text-info"></i> Tài Xế</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Index","BenXe_65134257")"><i class="bi bi-bank2 me-2 text-success"></i> Bến Xe</a></li>
+                        <li><a class="dropdown-item" href="@Url.Action("Index","KhachHang_65134257")"><i class="fas fa-user-tie me-2 text-info"></i> Quản Lý Tài Khoản</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="auth-panel position-absolute end-0">
+                @if (Session["KhachHang"] == null && Session["TaiKhoan"] == null)
+                {
+                    <a href="@Url.Action("DangKy", "Account_65134257")" class="btn-auth btn-register">
+                        <i class="fas fa-user-plus me-1"></i> Đăng ký
+                    </a>
+                    <a href="@Url.Action("DangNhap", "Account_65134257")" class="btn-auth btn-login">
+                        <i class="fas fa-sign-in-alt me-1"></i> Đăng nhập
+                    </a>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <a class="user-info dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-lg me-1 text-warning"></i>
+                            @if (Session["KhachHang"] != null)
+                            {
+                                <span>@(((dynamic)Session["KhachHang"]).TenKH)</span>
+                            }
+                            else if (Session["TaiKhoan"] != null)
+                            {
+                                <span>@(((dynamic)Session["TaiKhoan"]).HoTen)</span>
+                            }
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item text-danger" href="@Url.Action("DangKyAdmin", "Account_65134257")">
+                                    <i class="fas fa-user-plus me-2"></i>Đăng Ký Admin
+                                </a>
+                                <a class="dropdown-item text-danger" href="@Url.Action("DangXuat", "Account_65134257")">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </nav>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer class="futa-main-footer">
+        Copyright © @DateTime.Now.Year | Bản quyền thuộc về Công ty Cổ Phần Xe khách Phương Trang - FUTA Bus Lines
+    </footer>
+    
+    @RenderSection("scripts", required: false)
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #f4f6f8;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    /* ----- HEADER ----- */
+    .futa-header {
+        background: linear-gradient(90deg, #ff6b00, #ff8800);
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+        .futa-header .logo img {
+            height: 120px; /* KÍCH THƯỚC MỚI */
+            width: 120px; /* Bằng chiều cao để giữ hình tròn */
+
+            border-radius: 50%; /* GIỮ HÌNH TRÒN */
+
+            background-color: white;
+            padding: 5px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+            /* Giữ hiệu ứng bóng đổ */
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        }
+
+            .futa-header .logo img:hover {
+                transform: scale(1.1) rotate(5deg);
+            }
+
+    .header-title {
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+        text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    }
+
+    /* Logo căn giữa chiều dọc */
+    .logo img {
+        height: 90px;
+        transition: 0.3s;
+    }
+
+        .logo img:hover {
+            transform: scale(1.06);
+        }
+
+    /* ----- NAV BAR ----- */
+    .futa-nav-bar {
+        background: #ffffff;
+        padding: 10px 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    }
+
+    .menu-list {
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        .menu-list li a {
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.25s;
+            font-size: 17px;
+            color: #ff6b00;
+        }
+
+            .menu-list li a:hover {
+                background: #ff6b00;
+                color: white;
+                box-shadow: 0 4px 8px rgba(255,102,0,0.35);
+            }
+
+    .separator {
+        color: #999;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .menu-list li.dropdown .dropdown-toggle {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: 0.25s;
+        font-size: 17px;
+        color: #ff6b00; /* Màu cam giống các mục menu khác */
+        /* Thêm ký hiệu mũi tên xuống nếu muốn */
+        /* padding-right: 20px;
+       background-image: url("data:image/svg+xml;..."); */
+    }
+
+        /* Hiệu ứng hover cho dropdown-toggle */
+        .menu-list li.dropdown .dropdown-toggle:hover {
+            background: #ff6b00;
+            color: white;
+            box-shadow: 0 4px 8px rgba(255,102,0,0.35);
+        }
+
+    /* Định dạng chung cho menu dropdown */
+    .dropdown-menu {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        margin-top: 10px; /* Tạo khoảng cách với navbar */
+        background-color: white;
+    }
+
+    .dropdown-item {
+        font-weight: 500;
+        padding: 10px 15px;
+        color: #333;
+    }
+
+        .dropdown-item:hover {
+            background-color: #ffe5cc; /* Màu cam nhạt khi hover */
+            color: #ff6b00;
+        }
+
+        /* Đảm bảo icon bên trong dropdown không bị ảnh hưởng bởi hover */
+        .dropdown-item i {
+            width: 20px; /* Giúp căn đều các item */
+        }
+
+    /* ----- CONTENT ----- */
+    .content {
+        min-height: 70vh;
+        padding: 25px;
+        background: #fff;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 16px;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+    }
+
+    /* ----- FOOTER ----- */
+    .futa-main-footer {
+        background: #222;
+        padding: 14px;
+        color: #ddd;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+        border-top: 4px solid #ff6b00;
+    }
+</style>
+</html>

@@ -1,0 +1,51 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.Tuyen
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tuyen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTuyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTuyen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuangDuongKm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuangDuongKm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BenXe.TenBen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BenXe.TenBen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BenXe1.TenBen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BenXe1.TenBen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaTuyen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

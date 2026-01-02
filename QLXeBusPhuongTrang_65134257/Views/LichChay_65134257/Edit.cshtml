@@ -1,0 +1,136 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.LichChay
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="container-fluid pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-header bg-white py-3" style="border-bottom: 2px solid #ef5222;">
+                    <h4 class="mb-0 fw-bold text-uppercase text-center" style="color: #ef5222;">
+                        <i class="fas fa-edit me-2"></i> Cập nhật Lịch Chạy
+                    </h4>
+                </div>
+
+                <div class="card-body bg-light p-4">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.MaLichChay)
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="text-danger border-bottom pb-2 mb-3 fw-bold">Thông tin vận hành</h5>
+
+                                    <div class="form-group mb-3">
+                                        <label class="fw-bold control-label mb-1">Tuyến xe</label>
+                                        @Html.DropDownList("MaTuyen", null, htmlAttributes: new { @class = "form-control form-select" })
+                                        @Html.ValidationMessageFor(model => model.MaTuyen, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="fw-bold control-label mb-1">Biển số xe</label>
+                                        @Html.DropDownList("MaXe", null, htmlAttributes: new { @class = "form-control form-select" })
+                                        @Html.ValidationMessageFor(model => model.MaXe, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="fw-bold control-label mb-1">Tài xế phụ trách</label>
+                                        @Html.DropDownList("MaTaiXe", null, htmlAttributes: new { @class = "form-control form-select" })
+                                        @Html.ValidationMessageFor(model => model.MaTaiXe, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h5 class="text-danger border-bottom pb-2 mb-3 fw-bold">Thời gian & Trạng thái</h5>
+
+                                    <div class="form-group mb-3">
+                                        <label class="control-label fw-bold mb-1">Giờ khởi hành</label>
+                                        <input type="time"
+                                               name="GioKhoiHanh"
+                                               class="form-control"
+                                               value="@Model.GioKhoiHanh.ToString(@"hh\:mm")"
+                                               required />
+                                        @Html.ValidationMessageFor(model => model.GioKhoiHanh, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="control-label fw-bold mb-1">Giờ đến (Dự kiến)</label>
+                                        <input type="time"
+                                               name="GioDen"
+                                               class="form-control"
+                                               value="@Model.GioDen.ToString(@"hh\:mm")"
+                                               required />
+                                        @Html.ValidationMessageFor(model => model.GioDen, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="control-label fw-bold mb-1">Trạng thái vận hành</label>
+                                        @{
+                                            var listTrangThai = new List<SelectListItem>
+                                                                        {
+                                                new SelectListItem {
+                                                    Text = "Hoạt động",
+                                                    Value = "true",
+                                                    Selected = (Model.TrangThai != null && Model.TrangThai.ToLower() == "true")
+                                                },
+                                                new SelectListItem {
+                                                    Text = "Đã hủy",
+                                                    Value = "false",
+                                                    Selected = (Model.TrangThai != null && Model.TrangThai.ToLower() == "false")
+                                                }
+                                            };
+                                        }
+                                        @Html.DropDownListFor(model => model.TrangThai, listTrangThai, new { @class = "form-control form-select" })
+                                        @Html.ValidationMessageFor(model => model.TrangThai, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4" />
+
+                            <div class="text-center">
+                                <a href="@Url.Action("Index")" class="btn btn-secondary px-4 me-2">
+                                    <i class="fas fa-arrow-left me-1"></i> Quay lại
+                                </a>
+                                <button type="submit" class="btn futa-btn-custom px-5 fw-bold text-uppercase">
+                                    <i class="fas fa-save me-1"></i> Lưu thay đổi
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .futa-btn-custom {
+        background-color: #ef5222;
+        color: white;
+        border: 1px solid #ef5222;
+        transition: 0.3s;
+    }
+
+        .futa-btn-custom:hover {
+            background-color: #d03e12;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .form-control:focus {
+        border-color: #ef5222;
+        box-shadow: 0 0 0 0.2rem rgba(239, 82, 34, 0.25);
+    }
+</style>

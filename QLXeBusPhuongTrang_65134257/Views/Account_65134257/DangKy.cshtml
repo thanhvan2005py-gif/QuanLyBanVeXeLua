@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+
+}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-center py-3" style="background-color: #ffffff; border-bottom: 2px solid #ff6b00;">
+                    <h4 class="mb-0 fw-bold" style="color: #ff6b00;">
+                        <i class="fas fa-sign-in-alt me-2"></i> ĐĂNG KÝ
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    @using (Html.BeginForm("DangKy", "Account_65134257", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.ValidationSummary(true, "", new { @class = "alert alert-warning" })
+
+                        <div class="mb-3">
+                            <label for="TenKH" class="form-label fw-bold">Họ Tên</label>
+                            <input type="text" id="TenKH" name="TenKH" class="form-control" required placeholder="Nhập họ tên của bạn" />
+                            @Html.ValidationMessage("TenKH", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="DienThoai" class="form-label fw-bold">SĐT(Tên Tài Khoản)</label>
+
+                            <input type="text"
+                                   id="DienThoai"
+                                   name="DienThoai"
+                                   class="form-control"
+                                   required
+                                   placeholder="Nhập SĐT..."
+                                   maxlength="10"
+                                   pattern="[0-9]{10}"
+                                   title="Số điện thoại phải gồm đúng 10 chữ số"
+                                   oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+
+                            @Html.ValidationMessage("DienThoai", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label fw-bold">Email:</label>
+
+                            <input type="email" id="Email" name="Email" class="form-control" placeholder="Nhập Email..." required />
+
+                            @Html.ValidationMessage("Email", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="MatKhau" class="form-label fw-bold">Mật khẩu</label>
+
+                            <div class="input-group">
+                                <input type="password"
+                                       id="MatKhau"
+                                       name="MatKhau"
+                                       class="form-control"
+                                       required
+                                       placeholder="Nhập mật khẩu..."
+                                       @* 1. Độ dài tối thiểu *@
+                                       minlength="6"
+                                       @* 2. Regex: Ít nhất 1 số, 1 thường, 1 hoa *@
+                                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                       @* 3. Tooltip báo lỗi *@
+                                       title="Mật khẩu phải có ít nhất 6 ký tự, bao gồm: chữ hoa, chữ thường và số." />
+                            </div>
+
+                            @Html.ValidationMessage("MatKhau", new { @class = "text-danger" })
+
+                            <small class="text-muted" style="font-size: 0.85rem; margin-top: 5px; display: block;">
+                                * Yêu cầu: Tối thiểu 6 ký tự, bao gồm chữ hoa, chữ thường và Số.
+                            </small>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-warning btn-lg fw-bold futa-btn-custom">HOÀN TẤT ĐĂNG KÝ</button>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer text-center bg-light">
+                    Đã có tài khoản? <a href="@Url.Action("DangNhap")" class="text-primary fw-bold">Đăng nhập ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* CSS bổ sung để đồng bộ màu sắc với layout chính */
+    .futa-header-bg {
+        background-color: #ff6b00;
+    }
+
+    .futa-btn-custom {
+        background-color: #ff6b00;
+        border-color: #ff6b00;
+        color: white;
+    }
+
+        .futa-btn-custom:hover {
+            background-color: #e65c00;
+            border-color: #e65c00;
+            color: white;
+        }
+</style>
+<script>
+    function togglePassword() {
+        var passwordInput = document.getElementById("MatKhau");
+        var icon = document.getElementById("eyeIcon");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash"); // Đổi icon thành gạch chéo
+        } else {
+            passwordInput.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye"); // Đổi lại icon con mắt thường
+        }
+    }
+</script>

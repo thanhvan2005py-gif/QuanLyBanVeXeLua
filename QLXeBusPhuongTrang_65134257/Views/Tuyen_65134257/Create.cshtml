@@ -1,0 +1,113 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.Tuyen
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .create-container {
+        max-width: 600px;
+        margin: 30px auto;
+        background: #ffffff;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-top: 6px solid #ff6600;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        color: #ff6600;
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        transition: 0.2s;
+    }
+
+        .form-control:focus {
+            border-color: #ff6600;
+            box-shadow: 0 0 6px rgba(255,102,0,0.6);
+        }
+
+    label {
+        font-weight: bold;
+    }
+
+    .btn-create {
+        background: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .btn-create:hover {
+            background: #cc5200;
+        }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 15px;
+        color: #333;
+        font-weight: bold;
+    }
+    }
+</style>
+
+<div class="create-container">
+    <h2>Thêm Tuyến Mới</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.TenTuyen, "Tên Tuyến")
+                @Html.TextBoxFor(model => model.TenTuyen, new { @class = "form-control", placeholder = "Nhập tên tuyến..." })
+                @Html.ValidationMessageFor(model => model.TenTuyen, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.BenDau, "Bến Đầu")
+                @Html.DropDownList("BenDau", null, "--- Chọn bến đầu ---", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.BenDau, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.BenCuoi, "Bến Cuối")
+                @Html.DropDownList("BenCuoi", null, "--- Chọn bến cuối ---", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.BenCuoi, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.QuangDuongKm, "Quãng Đường")
+                @Html.TextBoxFor(model => model.QuangDuongKm, new { @class = "form-control", placeholder = "Nhập số km..." })
+                @Html.ValidationMessageFor(model => model.QuangDuongKm, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group text-center mt-4">
+                <button type="submit" class="btn-create">➕ Tạo Tuyến</button>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="text-center">
+    @Html.ActionLink("⬅ Quay về danh sách", "Index", null, new { @class = "back-link" })
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,67 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.LichChay
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LichChay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GioKhoiHanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioKhoiHanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioDen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioDen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangThai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaiXe.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaiXe.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tuyen.TenTuyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tuyen.TenTuyen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xe.BienSo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xe.BienSo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLichChay }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

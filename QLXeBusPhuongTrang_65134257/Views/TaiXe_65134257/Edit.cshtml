@@ -1,0 +1,72 @@
+﻿@model QLXeBusPhuongTrang_65134257.Models.TaiXe
+
+@{
+    ViewBag.Title = "Edit";
+   
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg">
+               
+                <div class="card-header bg-white py-3 rounded-top-4">
+                    <h4 class="mb-0 fw-bold text-success">
+                        <i class="fas fa-users-cog me-2"></i> Chỉnh Sửa Thông Tin Tài Xế
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @* Hidden field cho MaTaiXe (ID) *@
+                            @Html.HiddenFor(model => model.MaTaiXe)
+
+                            @* Hiển thị tóm tắt lỗi chung nếu có *@
+                            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                            @* Trường Họ Tên *@
+                            <div class="form-group row mb-3">
+                                @Html.LabelFor(model => model.HoTen, "Họ Tên", new { @class = "col-md-4 col-form-label" })
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Trường Điện Thoại *@
+                            <div class="form-group row mb-3">
+                                @Html.LabelFor(model => model.DienThoai, "Điện Thoại", new { @class = "col-md-4 col-form-label" })
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.DienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Trường Bằng Lái *@
+                            <div class="form-group row mb-4">
+                                @Html.LabelFor(model => model.BangLai, "Loại Bằng Lái", new { @class = "col-md-4 col-form-label" })
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.BangLai, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.BangLai, "", new { @class = "text-danger small mt-1" })
+                                </div>
+                            </div>
+
+                            @* Nút Submit *@
+                            <div class="form-group row">
+                                <div class="col-md-8 offset-md-4">
+                                    <input type="submit" value=" Lưu Thay Đổi" class="btn btn-success btn-lg" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer text-end">
+                    @Html.ActionLink("Quay lại Danh sách", "Index", null, new { @class = "btn btn-outline-secondary" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
